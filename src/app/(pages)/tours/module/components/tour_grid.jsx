@@ -7,48 +7,58 @@ export default function TourGrid() {
     {
       id: 1,
       name: "Wild Coconut Discovery Centre",
-      description: "Discover the fascinating world of coconut production through hands-on demonstrations and tasty samples.",
-      image: "https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?q=80&w=2070&auto=format&fit=crop",
+      description:
+        "Discover the fascinating world of coconut production through hands-on demonstrations and tasty samples.",
+      image:
+        "https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?q=80&w=2070&auto=format&fit=crop",
       link: "/tours/wild-coconut-discovery",
     },
     {
       id: 2,
       name: "Home Island Cultural Tour",
-      description: "Immerse yourself in the rich Malay culture and heritage of Home Island with our expert local guides.",
-      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop",
+      description:
+        "Immerse yourself in the rich Malay culture and heritage of Home Island with our expert local guides.",
+      image:
+        "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop",
       link: "/tours/cultural-tour",
     },
     {
       id: 3,
       name: "Eco Workshops",
-      description: "Learn sustainable practices and traditional crafts through interactive workshops with local artisans.",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop",
+      description:
+        "Learn sustainable practices and traditional crafts through interactive workshops with local artisans.",
+      image:
+        "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013&auto=format&fit=crop",
       link: "/tours/eco-workshops",
     },
     {
       id: 4,
       name: "Plan Your Itinerary",
-      description: "Create your perfect Cocos Islands experience with our personalized itinerary planning service.",
-      image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2035&auto=format&fit=crop",
+      description:
+        "Create your perfect Saffron Shores Collective experience with our personalized itinerary planning service.",
+      image:
+        "https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=2035&auto=format&fit=crop",
       link: "/tours/plan-your-itinerary",
     },
   ];
 
   return (
-    <section 
+    <section
       className="relative py-20 px-6 sm:px-16 overflow-hidden"
       style={{
-        backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
+        backgroundImage:
+          "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundColor: "#f2edea"
+        backgroundColor: "#f2edea",
       }}
     >
       {/* Top gradient fade FROM #f2edea to transparent for smooth blend */}
-      <div 
+      <div
         className="absolute top-0 left-0 right-0 h-32 z-0"
         style={{
-          background: 'linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)'
+          background:
+            "linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)",
         }}
       ></div>
 
@@ -59,7 +69,8 @@ export default function TourGrid() {
             Our Tours & Experiences
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Choose from our curated selection of island adventures and cultural experiences
+            Choose from our curated selection of island adventures and cultural
+            experiences
           </p>
         </div>
 

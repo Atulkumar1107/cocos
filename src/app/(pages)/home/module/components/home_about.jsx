@@ -2,20 +2,25 @@ import Image from "next/image";
 
 export default function AboutPreview() {
   return (
-    <section 
+    <section
       className="relative py-20 px-6 sm:px-16 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762406810/palm-shadow-bg_oguf1z.png')",
+        backgroundImage:
+          "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762406810/palm-shadow-bg_oguf1z.png')",
       }}
     >
       {/* #f2edea Overlay for Consistent Look */}
-      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(242, 237, 234, 0.5)' }}></div>
+      <div
+        className="absolute inset-0"
+        style={{ backgroundColor: "rgba(242, 237, 234, 0.5)" }}
+      ></div>
 
       {/* Bottom gradient fade for smooth transition to BookingWidget */}
-      <div 
+      <div
         className="absolute bottom-0 left-0 right-0 h-48 z-[5]"
         style={{
-          background: 'linear-gradient(to bottom, rgba(242, 237, 234, 0) 0%, rgba(242, 237, 234, 0.3) 25%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 1) 100%)'
+          background:
+            "linear-gradient(to bottom, rgba(242, 237, 234, 0) 0%, rgba(242, 237, 234, 0.3) 25%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.9) 75%, rgba(255, 255, 255, 1) 100%)",
         }}
       ></div>
 
@@ -25,19 +30,26 @@ export default function AboutPreview() {
           {/* Text Content - Left Column */}
           <div className="space-y-6">
             <p className="text-lg text-gray-600 leading-relaxed">
-              Welcome to the Cocos (Keeling) Islands, where pristine turquoise waters meet 
-              rich cultural heritage. Our collective brings together local artisans, chefs, 
-              and guides who are passionate about sharing the authentic island experience.
+              Welcome to Saffron Sands Collective — where ocean horizons inspire
+              unforgettable experiences. Nestled along sun-kissed shores, we are
+              a community-driven collective dedicated to celebrating coastal
+              living through curated adventures, vibrant flavors, and meaningful
+              connections. Our team of creators, hosts, and storytellers work
+              together to design experiences that reflect the rhythm of island
+              life.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              From farm-to-table dining featuring fresh coconut products to guided tours 
-              through our tropical paradise, every experience is crafted with care by our 
-              community. Discover the stories, flavors, and natural beauty that make our 
-              islands truly unique.
+              Savor thoughtfully crafted dishes inspired by local ingredients
+              and global influences. Explore hidden beaches, rolling tides, and
+              scenic landscapes through guided journeys led by passionate
+              locals. Every offering is designed to connect you with the land,
+              the sea, and the people who call it home.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Whether you're seeking adventure, culinary delights, or a peaceful escape, 
-              we invite you to explore all that Cocos Artisans Collective has to offer.
+              At Saffron Sands Collective, we believe travel should be
+              immersive, flavors should tell a story, and every sunset should
+              feel like a celebration. Join us for experiences shaped by the sea
+              and elevated with heart.
             </p>
           </div>
 
@@ -47,8 +59,8 @@ export default function AboutPreview() {
             <div className="col-span-1 row-span-2">
               <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://res.cloudinary.com/dbjcqykzz/image/upload/v1762406519/about-2_o6v0hw.webp"
-                  alt="Cocos Islands scenic view"
+                  src="https://res.cloudinary.com/dwau5poqz/image/upload/v1771521658/pexels-tonynojmansk-186688133-12698579_i88vig.jpg"
+                  alt="Saffron Shores Collective scenic view"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                 />
@@ -59,7 +71,7 @@ export default function AboutPreview() {
             <div className="col-span-1">
               <div className="relative h-48 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://res.cloudinary.com/dbjcqykzz/image/upload/v1762406712/about-1_avlpdf.webp"
+                  src="https://res.cloudinary.com/dwau5poqz/image/upload/v1771521744/pexels-vincent-gerbouin-445991-1174737_iztccl.jpg"
                   alt="Local artisan at work"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -71,7 +83,7 @@ export default function AboutPreview() {
             <div className="col-span-1">
               <div className="relative h-48 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src="https://res.cloudinary.com/dbjcqykzz/image/upload/v1762406755/about-3_am0rwi.webp"
+                  src="https://res.cloudinary.com/dwau5poqz/image/upload/v1771521781/pexels-riciardus-871060_wca4be.jpg"
                   alt="Fresh local cuisine"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"

@@ -6,42 +6,50 @@ export default function DiningOptions() {
   const diningPlaces = [
     {
       id: 1,
-      name: "Saltys Café",
-      description: "Freshly baked goods, aromatic coffee, and light bites perfect for breakfast or a quick lunch near the airport.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763117438/pexels-wondererphotograph-2564081_a69ryo.jpg",
-      link: "/dining/saltys-cafe",
+      name: "Saffron Shores Collective",
+      description:
+        "Freshly baked goods, aromatic coffee, and light bites perfect for breakfast or a quick lunch near the airport.",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763117438/pexels-wondererphotograph-2564081_a69ryo.jpg",
+      link: "/dining/saffron-shores-collective",
     },
     {
       id: 2,
-      name: "Surfer Girl Restaurant",
-      description: "Beachfront dining with fresh seafood, tropical cocktails, and stunning sunset views in a relaxed island atmosphere.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763117521/pexels-elevate-1269043_hirbnm.jpg",
-      link: "/dining/surfer-girl-restaurant-brewery",
+      name: "Saffron Sunset Surf",
+      description:
+        "Beachfront dining with fresh seafood, tropical cocktails, and stunning sunset views in a relaxed island atmosphere.",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763117521/pexels-elevate-1269043_hirbnm.jpg",
+      link: "/dining/saffron-sunset-surf",
     },
     {
       id: 3,
       name: "Private Catering",
-      description: "Personalized menus and professional service for your special events, celebrations, and intimate gatherings.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763117647/pexels-bohlemedia-1114427_eebchz.jpg",
+      description:
+        "Personalized menus and professional service for your special events, celebrations, and intimate gatherings.",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763117647/pexels-bohlemedia-1114427_eebchz.jpg",
       link: "/dining/private-catering",
     },
   ];
 
   return (
-    <section 
+    <section
       className="relative py-20 px-6 sm:px-16 overflow-hidden"
       style={{
-        backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
+        backgroundImage:
+          "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundColor: "#f2edea"
+        backgroundColor: "#f2edea",
       }}
     >
       {/* Top gradient fade FROM #f2edea to transparent for smooth blend */}
-      <div 
+      <div
         className="absolute top-0 left-0 right-0 h-32 z-0"
         style={{
-          background: 'linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)'
+          background:
+            "linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)",
         }}
       ></div>
 

@@ -3,14 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, use } from "react";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 import { addToCart } from "@/app/lib/redux/slices/cartSlice";
-import toast from 'react-hot-toast';
-import { getProductById, getRelatedProducts } from "@/app/lib/data/miniMartProducts";
+import toast from "react-hot-toast";
+import {
+  getProductById,
+  getRelatedProducts,
+} from "@/app/lib/data/miniMartProducts";
 
 export default function ProductDetail({ params }) {
   const dispatch = useDispatch();
-  
+
   // Unwrap params using React.use()
   const unwrappedParams = use(params);
   const product = getProductById(unwrappedParams.productId);
@@ -22,8 +25,13 @@ export default function ProductDetail({ params }) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Product Not Found</h1>
-          <Link href="/fresh-produce" className="text-gray-900 underline hover:text-gray-700">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+            Product Not Found
+          </h1>
+          <Link
+            href="/fresh-produce"
+            className="text-gray-900 underline hover:text-gray-700"
+          >
             Back to Mini Mart
           </Link>
         </div>
@@ -33,8 +41,9 @@ export default function ProductDetail({ params }) {
 
   const relatedProducts = getRelatedProducts(product.id, product.category);
 
-  const incrementQuantity = () => setQuantity(prev => prev + 1);
-  const decrementQuantity = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
+  const incrementQuantity = () => setQuantity((prev) => prev + 1);
+  const decrementQuantity = () =>
+    setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
 
   const handleAddToCart = () => {
     const cartItem = {
@@ -48,19 +57,19 @@ export default function ProductDetail({ params }) {
     };
 
     dispatch(addToCart(cartItem));
-    
+
     toast.success(`Added ${quantity} x ${product.name} to cart!`, {
       duration: 3000,
       style: {
-        background: '#10b981',
-        color: '#fff',
+        background: "#10b981",
+        color: "#fff",
       },
       iconTheme: {
-        primary: '#fff',
-        secondary: '#10b981',
+        primary: "#fff",
+        secondary: "#10b981",
       },
     });
-    
+
     setQuantity(1);
   };
 
@@ -81,17 +90,19 @@ export default function ProductDetail({ params }) {
     <>
       {/* Hero Section */}
       <div className="relative flex min-h-[60vh] items-center justify-center bg-zinc-50 dark:bg-black overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg')",
+            backgroundImage:
+              "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div 
+        <div
           className="absolute top-0 left-0 right-0 h-32 z-[5]"
           style={{
-            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%)'
+            background:
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%)",
           }}
         />
         <main className="relative z-10 flex w-full max-w-6xl flex-col items-center justify-center px-6 py-20 text-center sm:px-16">
@@ -99,9 +110,13 @@ export default function ProductDetail({ params }) {
             {product.name}
           </h1>
           <div className="flex items-center justify-center space-x-2 text-sm text-white/90">
-            <Link href="/" className="hover:text-white transition">Home</Link>
+            <Link href="/" className="hover:text-white transition">
+              Home
+            </Link>
             <span>/</span>
-            <Link href="/fresh-produce" className="hover:text-white transition">Fresh-Produce</Link>
+            <Link href="/fresh-produce" className="hover:text-white transition">
+              Fresh-Produce
+            </Link>
             <span>/</span>
             <span className="text-white font-semibold">{product.name}</span>
           </div>
@@ -112,7 +127,6 @@ export default function ProductDetail({ params }) {
       <section className="py-12 px-6 sm:px-16 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
             {/* LEFT - Images (STICKY) */}
             <div>
               <div className="sticky top-32 lg:top-24">
@@ -132,8 +146,8 @@ export default function ProductDetail({ params }) {
                         onClick={() => setSelectedImage(index)}
                         className={`relative h-32 overflow-hidden rounded-lg border-2 transition-all ${
                           selectedImage === index
-                            ? 'border-gray-900'
-                            : 'border-gray-200 hover:border-gray-400'
+                            ? "border-gray-900"
+                            : "border-gray-200 hover:border-gray-400"
                         }`}
                       >
                         <Image
@@ -159,17 +173,27 @@ export default function ProductDetail({ params }) {
               </div>
 
               {/* Stock Status */}
-              <div className={`p-4 rounded-xl border-2 ${
-                product.inStock 
-                  ? 'bg-green-50 border-green-200' 
-                  : 'bg-red-50 border-red-200'
-              }`}>
+              <div
+                className={`p-4 rounded-xl border-2 ${
+                  product.inStock
+                    ? "bg-green-50 border-green-200"
+                    : "bg-red-50 border-red-200"
+                }`}
+              >
                 <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <svg
+                    className="w-5 h-5 text-green-600"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                   <span className="font-semibold text-green-900">
-                    {product.inStock ? 'In Stock' : 'Out of Stock'}
+                    {product.inStock ? "In Stock" : "Out of Stock"}
                   </span>
                 </div>
               </div>
@@ -183,7 +207,9 @@ export default function ProductDetail({ params }) {
 
               {/* Category Badge */}
               <div>
-                <span className={`text-xs font-bold uppercase px-3 py-1 rounded-full ${getCategoryColor(product.category)} inline-block`}>
+                <span
+                  className={`text-xs font-bold uppercase px-3 py-1 rounded-full ${getCategoryColor(product.category)} inline-block`}
+                >
                   {product.category}
                 </span>
               </div>
@@ -227,20 +253,41 @@ export default function ProductDetail({ params }) {
                   Product Information
                 </h3>
                 <div className="space-y-2 text-sm">
-                  <p><span className="font-semibold">Origin:</span> {product.specifications.origin}</p>
-                  <p><span className="font-semibold">Size:</span> {product.specifications.size}</p>
-                  <p><span className="font-semibold">Weight:</span> {product.specifications.weight}</p>
+                  <p>
+                    <span className="font-semibold">Origin:</span>{" "}
+                    {product.specifications.origin}
+                  </p>
+                  <p>
+                    <span className="font-semibold">Size:</span>{" "}
+                    {product.specifications.size}
+                  </p>
+                  <p>
+                    <span className="font-semibold">Weight:</span>{" "}
+                    {product.specifications.weight}
+                  </p>
                   {product.specifications.ingredients && (
-                    <p><span className="font-semibold">Ingredients:</span> {product.specifications.ingredients}</p>
+                    <p>
+                      <span className="font-semibold">Ingredients:</span>{" "}
+                      {product.specifications.ingredients}
+                    </p>
                   )}
                   {product.specifications.materials && (
-                    <p><span className="font-semibold">Materials:</span> {product.specifications.materials}</p>
+                    <p>
+                      <span className="font-semibold">Materials:</span>{" "}
+                      {product.specifications.materials}
+                    </p>
                   )}
                   {product.specifications.shelf_life && (
-                    <p><span className="font-semibold">Shelf Life:</span> {product.specifications.shelf_life}</p>
+                    <p>
+                      <span className="font-semibold">Shelf Life:</span>{" "}
+                      {product.specifications.shelf_life}
+                    </p>
                   )}
                   {product.specifications.care && (
-                    <p><span className="font-semibold">Care:</span> {product.specifications.care}</p>
+                    <p>
+                      <span className="font-semibold">Care:</span>{" "}
+                      {product.specifications.care}
+                    </p>
                   )}
                 </div>
               </div>
@@ -253,9 +300,11 @@ export default function ProductDetail({ params }) {
                 <p className="text-gray-700 leading-relaxed mb-4">
                   {product.description}
                 </p>
-                
+
                 {/* Features */}
-                <h4 className="text-base font-semibold text-gray-900 mb-2">Key Features:</h4>
+                <h4 className="text-base font-semibold text-gray-900 mb-2">
+                  Key Features:
+                </h4>
                 <ul className="space-y-2 mb-4">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start text-gray-700">
@@ -266,7 +315,9 @@ export default function ProductDetail({ params }) {
                 </ul>
 
                 {/* How to Use */}
-                <h4 className="text-base font-semibold text-gray-900 mb-2">How to Use:</h4>
+                <h4 className="text-base font-semibold text-gray-900 mb-2">
+                  How to Use:
+                </h4>
                 <p className="text-gray-700 leading-relaxed">
                   {product.howToUse}
                 </p>
@@ -279,7 +330,10 @@ export default function ProductDetail({ params }) {
                 </h3>
                 <div className="space-y-2 text-sm text-gray-700">
                   <p>📦 Available for pickup at our Mini Mart location</p>
-                  <p>🚚 Local delivery available within the Cocos Islands</p>
+                  <p>
+                    🚚 Local delivery available within the Saffron Shores
+                    Collective
+                  </p>
                   <p>↩️ Returns accepted within 7 days for unopened products</p>
                   <p>💰 Full refund for damaged or defective items</p>
                 </div>
@@ -310,7 +364,9 @@ export default function ProductDetail({ params }) {
                         />
                       </div>
                       <div className="p-4 flex-1 flex flex-col">
-                        <span className={`text-xs font-bold uppercase px-3 py-1 rounded-full ${getCategoryColor(relatedProduct.category)} inline-block w-fit mb-3`}>
+                        <span
+                          className={`text-xs font-bold uppercase px-3 py-1 rounded-full ${getCategoryColor(relatedProduct.category)} inline-block w-fit mb-3`}
+                        >
                           {relatedProduct.category}
                         </span>
                         <h3 className="text-lg font-bold text-gray-900 mb-2">

@@ -2,22 +2,22 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { 
-  Bus, 
-  Building2, 
-  UtensilsCrossed, 
-  Camera, 
-  Users, 
-  Clock, 
+import {
+  Bus,
+  Building2,
+  UtensilsCrossed,
+  Camera,
+  Users,
+  Clock,
   MapPin,
   DollarSign,
   Check,
   Calendar,
   User,
   Mail,
-  ChevronDown  ,
+  ChevronDown,
   Phone,
-  MessageSquare
+  MessageSquare,
 } from "lucide-react";
 
 export default function HomeIslandTour() {
@@ -27,7 +27,7 @@ export default function HomeIslandTour() {
     name: "",
     email: "",
     phone: "",
-    dietaryRequirements: ""
+    dietaryRequirements: "",
   });
 
   const handleSubmit = (e) => {
@@ -36,51 +36,56 @@ export default function HomeIslandTour() {
     // Add your booking logic here
     alert("Thank you! Your booking request has been received.");
   };
-const [isGuestsOpen, setIsGuestsOpen] = useState(false);
+  const [isGuestsOpen, setIsGuestsOpen] = useState(false);
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
-// Close dropdown when clicking outside
-useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (isGuestsOpen && !event.target.closest('.relative')) {
-      setIsGuestsOpen(false);
-    }
-  };
-  document.addEventListener('mousedown', handleClickOutside);
-  return () => document.removeEventListener('mousedown', handleClickOutside);
-}, [isGuestsOpen]);
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (isGuestsOpen && !event.target.closest(".relative")) {
+        setIsGuestsOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isGuestsOpen]);
 
   // Tour highlights with Lucide icons
   const highlights = [
     {
       icon: Bus,
       title: "Guided Island Tour",
-      description: "Explore the island's natural beauty, local community, and hidden gems"
+      description:
+        "Explore the island's natural beauty, local community, and hidden gems",
     },
     {
       icon: Building2,
       title: "Oceania House Visit",
-      description: "Step inside this iconic heritage landmark and learn its fascinating story"
+      description:
+        "Step inside this iconic heritage landmark and learn its fascinating story",
     },
     {
       icon: UtensilsCrossed,
       title: "Traditional Malay Feast",
-      description: "Authentic feast showcasing the rich culinary heritage of the Cocos Malay community"
+      description:
+        "Authentic feast showcasing the rich culinary heritage of the Cocos Malay community",
     },
     {
       icon: Camera,
       title: "Photo Opportunities",
-      description: "Capture stunning moments throughout this immersive island experience"
+      description:
+        "Capture stunning moments throughout this immersive island experience",
     },
     {
       icon: Users,
       title: "Meet Locals",
-      description: "Connect with the warm Cocos Malay community and hear their stories"
-    }
+      description:
+        "Connect with the warm Cocos Malay community and hear their stories",
+    },
   ];
 
   // What's included
@@ -90,27 +95,28 @@ useEffect(() => {
     "Traditional Malay dinner feast with multiple courses",
     "Round-trip transportation from meeting point",
     "Cultural insights and historical stories",
-    "All entrance fees and permits"
+    "All entrance fees and permits",
   ];
 
   // Why you'll love it
   const reasons = [
     "Perfect for culture seekers and food lovers",
     "Blend of history, adventure, and authentic local cuisine",
-    "A truly immersive Cocos Islands experience",
-    "Small group sizes for personalized attention"
+    "A truly immersive Saffron Shores Collective experience",
+    "Small group sizes for personalized attention",
   ];
 
   return (
     <div className="min-h-screen bg-white">
       {/* Tour Info Section - Image Left + Info Right */}
-      <section 
+      <section
         className="relative py-20 px-6 sm:px-16"
         style={{
-          backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
+          backgroundImage:
+            "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundColor: "#f2edea"
+          backgroundColor: "#f2edea",
         }}
       >
         <div className="max-w-7xl mx-auto">
@@ -132,9 +138,9 @@ useEffect(() => {
                 Home Island: Oceania House Tour & Malay Dinner Feast
               </h1>
               <p className="text-base text-gray-700 mb-6 leading-relaxed">
-                Join us for an unforgettable journey through the charm and culture of Home Island. 
-                This full experience combines history, exploration, and authentic flavors in one 
-                remarkable package.
+                Join us for an unforgettable journey through the charm and
+                culture of Home Island. This full experience combines history,
+                exploration, and authentic flavors in one remarkable package.
               </p>
 
               {/* Tour Info Grid */}
@@ -142,36 +148,56 @@ useEffect(() => {
                 {/* Duration */}
                 <div className="text-center p-4 rounded-2xl bg-gray-50">
                   <div className="flex justify-center mb-2">
-                    <Clock className="w-7 h-7 text-gray-800" strokeWidth={1.5} />
+                    <Clock
+                      className="w-7 h-7 text-gray-800"
+                      strokeWidth={1.5}
+                    />
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Duration</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                    Duration
+                  </h3>
                   <p className="text-xl font-bold text-gray-800">5 Hours</p>
                 </div>
 
                 {/* Group Size */}
                 <div className="text-center p-4 rounded-2xl bg-gray-50">
                   <div className="flex justify-center mb-2">
-                    <Users className="w-7 h-7 text-gray-800" strokeWidth={1.5} />
+                    <Users
+                      className="w-7 h-7 text-gray-800"
+                      strokeWidth={1.5}
+                    />
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Group Size</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                    Group Size
+                  </h3>
                   <p className="text-xl font-bold text-gray-800">Max 12</p>
                 </div>
 
                 {/* Price */}
                 <div className="text-center p-4 rounded-2xl bg-gray-50">
                   <div className="flex justify-center mb-2">
-                    <DollarSign className="w-7 h-7 text-gray-800" strokeWidth={1.5} />
+                    <DollarSign
+                      className="w-7 h-7 text-gray-800"
+                      strokeWidth={1.5}
+                    />
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Price</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                    Price
+                  </h3>
                   <p className="text-xl font-bold text-gray-800">$145</p>
                 </div>
 
                 {/* Meeting Point */}
                 <div className="text-center p-4 rounded-2xl bg-gray-50">
                   <div className="flex justify-center mb-2">
-                    <MapPin className="w-7 h-7 text-gray-800" strokeWidth={1.5} />
+                    <MapPin
+                      className="w-7 h-7 text-gray-800"
+                      strokeWidth={1.5}
+                    />
                   </div>
-                  <h3 className="text-sm font-semibold text-gray-900 mb-1">Meeting Point</h3>
+                  <h3 className="text-sm font-semibold text-gray-900 mb-1">
+                    Meeting Point
+                  </h3>
                   <p className="text-sm font-bold text-gray-800">West Island</p>
                 </div>
               </div>
@@ -179,9 +205,9 @@ useEffect(() => {
               {/* Book Now Button */}
               <button
                 onClick={() => {
-                  document.getElementById('booking-form').scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
+                  document.getElementById("booking-form").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
                   });
                 }}
                 className="w-full cursor-pointer bg-gray-900 text-white py-4 rounded-xl font-semibold text-lg hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
@@ -210,7 +236,9 @@ useEffect(() => {
                         <Check className="w-4 h-4 text-white" strokeWidth={3} />
                       </div>
                     </div>
-                    <span className="ml-4 text-gray-700 leading-relaxed">{item}</span>
+                    <span className="ml-4 text-gray-700 leading-relaxed">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -229,7 +257,9 @@ useEffect(() => {
                         <Check className="w-4 h-4 text-white" strokeWidth={3} />
                       </div>
                     </div>
-                    <span className="ml-4 text-gray-700 leading-relaxed">{reason}</span>
+                    <span className="ml-4 text-gray-700 leading-relaxed">
+                      {reason}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -238,25 +268,26 @@ useEffect(() => {
         </div>
       </section>
 
-    <section 
-  className="relative py-20 px-6 sm:px-16 overflow-hidden"
-  style={{
-    backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundColor: "#f2edea"
-  }}
->
-  {/* Top gradient fade FROM #f2edea to transparent for smooth blend */}
-  <div 
-    className="absolute top-0 left-0 right-0 h-32 z-0"
-    style={{
-      background: 'linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)'
-    }}
-  ></div>
+      <section
+        className="relative py-20 px-6 sm:px-16 overflow-hidden"
+        style={{
+          backgroundImage:
+            "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundColor: "#f2edea",
+        }}
+      >
+        {/* Top gradient fade FROM #f2edea to transparent for smooth blend */}
+        <div
+          className="absolute top-0 left-0 right-0 h-32 z-0"
+          style={{
+            background:
+              "linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)",
+          }}
+        ></div>
 
-  <div className="relative z-10 max-w-7xl mx-auto">
-            
+        <div className="relative z-10 max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Experience Highlights
@@ -277,7 +308,10 @@ useEffect(() => {
                 >
                   <div className="flex flex-col items-center text-center">
                     <div className="mb-6 p-4 rounded-full bg-gray-100 shadow-md group-hover:scale-110 transition-transform duration-500">
-                      <Icon className="w-8 h-8 text-gray-800" strokeWidth={1.5} />
+                      <Icon
+                        className="w-8 h-8 text-gray-800"
+                        strokeWidth={1.5}
+                      />
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-3">
                       {highlight.title}
@@ -303,7 +337,10 @@ useEffect(() => {
                   >
                     <div className="flex flex-col items-center text-center">
                       <div className="mb-6 p-4 rounded-full bg-gray-100 shadow-md group-hover:scale-110 transition-transform duration-500">
-                        <Icon className="w-8 h-8 text-gray-800" strokeWidth={1.5} />
+                        <Icon
+                          className="w-8 h-8 text-gray-800"
+                          strokeWidth={1.5}
+                        />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-3">
                         {highlight.title}
@@ -321,14 +358,15 @@ useEffect(() => {
       </section>
 
       {/* Gallery + Booking Form Section */}
-      <section 
+      <section
         id="booking-form"
         className="py-20 px-6 sm:px-16"
         style={{
-          backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762408026/palm-shadow-4_bgbhgf.png')",
+          backgroundImage:
+            "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762408026/palm-shadow-4_bgbhgf.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundColor: "#f2edea"
+          backgroundColor: "#f2edea",
         }}
       >
         <div className="max-w-7xl mx-auto">
@@ -426,7 +464,10 @@ useEffect(() => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {/* Date Picker */}
                       <div>
-                        <label htmlFor="date" className="flex items-center text-sm font-semibold text-gray-900 mb-2">
+                        <label
+                          htmlFor="date"
+                          className="flex items-center text-sm font-semibold text-gray-900 mb-2"
+                        >
                           <Calendar className="w-4 h-4 mr-2" />
                           Tour Date
                         </label>
@@ -441,119 +482,140 @@ useEffect(() => {
                         />
                       </div>
 
-                   {/* Number of Guests - Custom Dropdown */}
-<div className="relative">
-  <label className="flex items-center text-sm font-semibold text-gray-900 mb-2">
-    <Users className="w-4 h-4 mr-2" />
-    Guests
-  </label>
-  <button
-    type="button"
-    onClick={() => setIsGuestsOpen(!isGuestsOpen)}
-    className="w-full px-4 cursor-pointer py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all bg-white text-left flex items-center justify-between"
-  >
-    <span>{formData.guests} {formData.guests === 1 ? "Guest" : "Guests"}</span>
-    <ChevronDown className={`w-4 h-4 transition-transform ${isGuestsOpen ? 'rotate-180' : ''}`} />
-  </button>
-  
-  {isGuestsOpen && (
-    <div className="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-xl shadow-lg max-h-60 overflow-y-auto">
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
-        <button
-          key={num}
-          type="button"
-          onClick={() => {
-            setFormData({ ...formData, guests: num });
-            setIsGuestsOpen(false);
-          }}
-          className={`w-full px-4 py-2.5 text-left hover:bg-gray-100 transition-colors ${
-            formData.guests === num ? 'bg-gray-50 font-semibold' : ''
-          }`}
-        >
-          {num} {num === 1 ? "Guest" : "Guests"}
-        </button>
-      ))}
-    </div>
-  )}
-</div>
+                      {/* Number of Guests - Custom Dropdown */}
+                      <div className="relative">
+                        <label className="flex items-center text-sm font-semibold text-gray-900 mb-2">
+                          <Users className="w-4 h-4 mr-2" />
+                          Guests
+                        </label>
+                        <button
+                          type="button"
+                          onClick={() => setIsGuestsOpen(!isGuestsOpen)}
+                          className="w-full px-4 cursor-pointer py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all bg-white text-left flex items-center justify-between"
+                        >
+                          <span>
+                            {formData.guests}{" "}
+                            {formData.guests === 1 ? "Guest" : "Guests"}
+                          </span>
+                          <ChevronDown
+                            className={`w-4 h-4 transition-transform ${isGuestsOpen ? "rotate-180" : ""}`}
+                          />
+                        </button>
+
+                        {isGuestsOpen && (
+                          <div className="absolute z-10 w-full mt-2 bg-white border border-gray-300 rounded-xl shadow-lg max-h-60 overflow-y-auto">
+                            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(
+                              (num) => (
+                                <button
+                                  key={num}
+                                  type="button"
+                                  onClick={() => {
+                                    setFormData({ ...formData, guests: num });
+                                    setIsGuestsOpen(false);
+                                  }}
+                                  className={`w-full px-4 py-2.5 text-left hover:bg-gray-100 transition-colors ${
+                                    formData.guests === num
+                                      ? "bg-gray-50 font-semibold"
+                                      : ""
+                                  }`}
+                                >
+                                  {num} {num === 1 ? "Guest" : "Guests"}
+                                </button>
+                              ),
+                            )}
+                          </div>
+                        )}
+                      </div>
                     </div>
 
-                {/* Name and Email Row */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  {/* Name */}
-  <div>
-    <label htmlFor="name" className="flex items-center text-sm font-semibold text-gray-900 mb-2">
-      <User className="w-4 h-4 mr-2" />
-      Full Name
-    </label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      value={formData.name}
-      onChange={handleChange}
-      required
-      placeholder="John Smith"
-      className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all"
-    />
-  </div>
+                    {/* Name and Email Row */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Name */}
+                      <div>
+                        <label
+                          htmlFor="name"
+                          className="flex items-center text-sm font-semibold text-gray-900 mb-2"
+                        >
+                          <User className="w-4 h-4 mr-2" />
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          required
+                          placeholder="John Smith"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all"
+                        />
+                      </div>
 
-  {/* Email */}
-  <div>
-    <label htmlFor="email" className="flex items-center text-sm font-semibold text-gray-900 mb-2">
-      <Mail className="w-4 h-4 mr-2" />
-      Email
-    </label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      value={formData.email}
-      onChange={handleChange}
-      required
-      placeholder="john@example.com"
-      className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all"
-    />
-  </div>
-</div>
+                      {/* Email */}
+                      <div>
+                        <label
+                          htmlFor="email"
+                          className="flex items-center text-sm font-semibold text-gray-900 mb-2"
+                        >
+                          <Mail className="w-4 h-4 mr-2" />
+                          Email
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                          placeholder="john@example.com"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all"
+                        />
+                      </div>
+                    </div>
 
-{/* Phone and Dietary Requirements Row */}
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-  {/* Phone */}
-  <div>
-    <label htmlFor="phone" className="flex items-center text-sm font-semibold text-gray-900 mb-2">
-      <Phone className="w-4 h-4 mr-2" />
-      Phone
-    </label>
-    <input
-      type="tel"
-      id="phone"
-      name="phone"
-      value={formData.phone}
-      onChange={handleChange}
-      required
-      placeholder="+61 XXX XXX XXX"
-      className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all"
-    />
-  </div>
+                    {/* Phone and Dietary Requirements Row */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Phone */}
+                      <div>
+                        <label
+                          htmlFor="phone"
+                          className="flex items-center text-sm font-semibold text-gray-900 mb-2"
+                        >
+                          <Phone className="w-4 h-4 mr-2" />
+                          Phone
+                        </label>
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          required
+                          placeholder="+61 XXX XXX XXX"
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all"
+                        />
+                      </div>
 
-  {/* Dietary Requirements */}
-  <div>
-    <label htmlFor="dietaryRequirements" className="flex items-center text-sm font-semibold text-gray-900 mb-2">
-      <MessageSquare className="w-4 h-4 mr-2" />
-      Dietary Requirements
-    </label>
-    <textarea
-      id="dietaryRequirements"
-      name="dietaryRequirements"
-      value={formData.dietaryRequirements}
-      onChange={handleChange}
-      rows={1}
-      placeholder="Any dietary restrictions..."
-      className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all resize-none"
-    />
-  </div>
-</div>
+                      {/* Dietary Requirements */}
+                      <div>
+                        <label
+                          htmlFor="dietaryRequirements"
+                          className="flex items-center text-sm font-semibold text-gray-900 mb-2"
+                        >
+                          <MessageSquare className="w-4 h-4 mr-2" />
+                          Dietary Requirements
+                        </label>
+                        <textarea
+                          id="dietaryRequirements"
+                          name="dietaryRequirements"
+                          value={formData.dietaryRequirements}
+                          onChange={handleChange}
+                          rows={1}
+                          placeholder="Any dietary restrictions..."
+                          className="w-full px-4 py-2.5 rounded-xl border border-gray-300 focus:ring-2 focus:ring-gray-800 focus:border-transparent transition-all resize-none"
+                        />
+                      </div>
+                    </div>
 
                     {/* Submit Button */}
                     <button

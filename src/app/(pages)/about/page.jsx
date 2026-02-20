@@ -33,7 +33,7 @@ export default function About() {
 
         {/* Subheading/Description (Optional) */}
         <p className="mb-12 max-w-2xl text-lg text-white/90 sm:text-xl">
-          Discover the journey behind Cocos Artisans Collective and our passion for authentic island experiences
+          Discover the journey behind Saffron Sands Collective and our passion for authentic island experiences
         </p>
       </main>
     </div>

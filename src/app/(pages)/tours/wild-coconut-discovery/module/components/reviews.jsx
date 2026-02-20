@@ -13,7 +13,8 @@ export default function CoconutReviews() {
       location: "Perth, Australia",
       review:
         "An absolutely incredible experience! Learning about coconut production from harvest to pressing was fascinating. The jewellery workshop was the highlight - I made a beautiful necklace to remember the trip by.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407926/testimonial-5_r0olxr.webp",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407926/testimonial-5_r0olxr.webp",
     },
     {
       id: 2,
@@ -21,15 +22,17 @@ export default function CoconutReviews() {
       location: "Singapore",
       review:
         "The Wild Coconut Discovery Centre exceeded all expectations. The guides were knowledgeable and passionate. The tastings were delicious, and the gift shop had unique items you won't find anywhere else.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407891/testimonial-4_ilgbku.webp",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407891/testimonial-4_ilgbku.webp",
     },
     {
       id: 3,
       name: "Emma Williams",
       location: "Melbourne, Australia",
       review:
-        "A must-visit when on the Cocos Islands! The hands-on demonstrations were engaging and educational. My kids loved making coconut bowls, and we all enjoyed the fresh coconut ice cream. Highly recommend!",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407832/testimonial-1_ywj0c3.webp",
+        "A must-visit when on the Saffron Shores Collective! The hands-on demonstrations were engaging and educational. My kids loved making coconut bowls, and we all enjoyed the fresh coconut ice cream. Highly recommend!",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407832/testimonial-1_ywj0c3.webp",
     },
     {
       id: 4,
@@ -37,7 +40,8 @@ export default function CoconutReviews() {
       location: "Sydney, Australia",
       review:
         "What a unique experience! The tour guides shared so much knowledge about the island's coconut industry. The location at the old farm site adds an authentic touch. Don't miss this gem!",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407861/testimonial-3_yctpgq.webp",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407861/testimonial-3_yctpgq.webp",
     },
     {
       id: 5,
@@ -45,7 +49,8 @@ export default function CoconutReviews() {
       location: "Brisbane, Australia",
       review:
         "Loved every minute of our visit! The coconut production tour was informative, and the workshop was so much fun. The staff were friendly and welcoming. A perfect way to spend a morning on the islands.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407798/testimonial-2_j5pnol.webp",
+      image:
+        "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407798/testimonial-2_j5pnol.webp",
     },
   ];
 
@@ -61,12 +66,12 @@ export default function CoconutReviews() {
 
     const scroll = () => {
       scrollPosition += scrollSpeed;
-      
+
       // Reset position when we've scrolled through one set of reviews
       if (scrollPosition >= scrollContainer.scrollWidth / 3) {
         scrollPosition = 0;
       }
-      
+
       scrollContainer.scrollLeft = scrollPosition;
       requestAnimationFrame(scroll);
     };
@@ -77,7 +82,7 @@ export default function CoconutReviews() {
   }, []);
 
   return (
-    <section 
+    <section
       className="relative py-20 px-6 sm:px-16 overflow-hidden"
       style={{
         backgroundImage:

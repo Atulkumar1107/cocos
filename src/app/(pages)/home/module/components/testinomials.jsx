@@ -6,50 +6,51 @@ import Image from "next/image";
 export default function Testimonials() {
   const [isPaused, setIsPaused] = useState(false);
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Sarah Mitchell",
-      location: "Melbourne, Australia",
-      quote: "The Cocos Islands exceeded all expectations! The pristine beaches and warm hospitality made our honeymoon unforgettable. Can't wait to return!",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407832/testimonial-1_ywj0c3.webp",
-    },
-    {
-      id: 2,
-      name: "James Chen",
-      location: "Singapore",
-      quote: "An absolute paradise! The local cuisine was incredible and the guided tours showed us hidden gems we never would have found on our own.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407798/testimonial-2_j5pnol.webp",
-    },
-    {
-      id: 3,
-      name: "Emma Thompson",
-      location: "London, UK",
-      quote: "From snorkeling in crystal-clear waters to dining at Saltys, every moment was magical. The Cocos Artisans Collective truly captures island life.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407861/testimonial-3_yctpgq.webp",
-    },
-    {
-      id: 4,
-      name: "David Kumar",
-      location: "Perth, Australia",
-      quote: "The perfect escape from city life. Beautiful scenery, friendly locals, and amazing coconut products. Highly recommend Wild Coconut Estate!",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407891/testimonial-4_ilgbku.webp",
-    },
-    {
-      id: 5,
-      name: "Sophie Martin",
-      location: "Paris, France",
-      quote: "A hidden treasure in the Indian Ocean! The turquoise lagoons and fresh tropical fruits were incredible. Already planning our next visit.",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407926/testimonial-5_r0olxr.webp",
-    },
-    {
-      id: 6,
-      name: "Michael Wong",
-      location: "Hong Kong",
-      quote: "The island tours were phenomenal and Surfer Girl cafe became our daily ritual. Such a relaxing and authentic tropical experience!",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407891/testimonial-4_ilgbku.webp",
-    },
-  ];
+const testimonials = [
+  {
+    id: 1,
+    name: "Olivia Carter",
+    location: "Sydney, Australia",
+    quote: "Saffron Sands Collective delivered an unforgettable coastal escape. From golden sunsets to beautifully curated dining experiences, every detail felt thoughtful and personal.",
+    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407832/testimonial-1_ywj0c3.webp",
+  },
+  {
+    id: 2,
+    name: "Daniel Lee",
+    location: "Singapore",
+    quote: "The guided shoreline adventures were incredible. We explored hidden beaches and enjoyed fresh, locally inspired cuisine. A truly immersive island experience.",
+    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407798/testimonial-2_j5pnol.webp",
+  },
+  {
+    id: 3,
+    name: "Charlotte Evans",
+    location: "London, UK",
+    quote: "Everything felt authentic and beautifully organized. The ocean tours and sunset gatherings were the highlight of our trip. Highly recommended for anyone seeking relaxation and adventure.",
+    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407861/testimonial-3_yctpgq.webp",
+  },
+  {
+    id: 4,
+    name: "Arjun Mehta",
+    location: "Perth, Australia",
+    quote: "A refreshing break from city life. The hospitality, scenic coastal views, and thoughtfully prepared meals made our stay absolutely memorable.",
+    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407891/testimonial-4_ilgbku.webp",
+  },
+  {
+    id: 5,
+    name: "Isabella Moreau",
+    location: "Paris, France",
+    quote: "An inspiring seaside retreat. The blend of culture, flavors, and ocean adventures created the perfect balance of excitement and serenity.",
+    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407926/testimonial-5_r0olxr.webp",
+  },
+  {
+    id: 6,
+    name: "Ryan Tan",
+    location: "Hong Kong",
+    quote: "The beachfront dining and guided excursions were outstanding. Saffron Sands Collective truly captures the spirit of coastal living.",
+    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407891/testimonial-4_ilgbku.webp",
+  },
+];
+
 
   // Duplicate testimonials for infinite loop effect
   const duplicatedTestimonials = [...testimonials, ...testimonials];
@@ -134,7 +135,7 @@ export default function Testimonials() {
         <div className="text-center mt-8">
           <p className="text-gray-600 text-sm">
             Share your experience with{" "}
-            <span className="text-orange-600 font-semibold">#CocosArtisans</span>
+            <span className="text-orange-600 font-semibold">#SaffronSandsCollective</span>
           </p>
         </div>
       </div>

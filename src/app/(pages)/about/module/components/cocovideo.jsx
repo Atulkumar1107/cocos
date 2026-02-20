@@ -27,7 +27,7 @@ export default function WildVideoSection() {
             Our Production Process
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Experience the beauty, culture, and daily rhythms of Cocos Islands through the eyes of our community
+            Experience the beauty, culture, and daily rhythms of Saffron Sands Collective Islands through the eyes of our community
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function WildVideoSection() {
               {/* For YouTube: https://www.youtube.com/embed/YOUR_VIDEO_ID */}
               {/* For Vimeo: https://player.vimeo.com/video/YOUR_VIDEO_ID */}
               <iframe
-                src="https://www.youtube.com/embed/L1wCR4itlUA"
+                src="https://res.cloudinary.com/dwau5poqz/video/upload/v1771565030/8306778-hd_1920_1080_25fps_iylx7a.mp4"
                 title="Our Island Life Video"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

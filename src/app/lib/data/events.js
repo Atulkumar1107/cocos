@@ -1,10 +1,10 @@
 export const eventCategories = [
   "All Events",
   "Workshops",
-  "Cultural Events", 
+  "Cultural Events",
   "Tours",
   "Festivals",
-  "Community"
+  "Community",
 ];
 
 export const events = [
@@ -16,7 +16,8 @@ export const events = [
     date: "2025-12-25",
     time: "10:00 AM - 6:00 PM",
     location: "Home Island Community Center",
-    shortDescription: "Join us for a festive celebration with traditional food, music, and cultural performances.",
+    shortDescription:
+      "Join us for a festive celebration with traditional food, music, and cultural performances.",
     description: `
       <p>Celebrate the festive season island-style at our annual Christmas Island Festival. This beloved event brings together the entire community for a day of joy, tradition, and togetherness.</p>
       
@@ -37,10 +38,11 @@ export const events = [
       
       <p>This is a family-friendly event welcoming both residents and visitors. Come experience the warmth of island hospitality and create lasting holiday memories.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     capacity: 200,
     price: 0, // Free event
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 2,
@@ -50,9 +52,10 @@ export const events = [
     date: "2026-01-10",
     time: "9:00 AM - 1:00 PM",
     location: "Surfer Girl Restaurant",
-    shortDescription: "Learn to prepare authentic Cocos Malay dishes using traditional techniques and fresh local ingredients.",
+    shortDescription:
+      "Learn to prepare authentic Cocos Malay dishes using traditional techniques and fresh local ingredients.",
     description: `
-      <p>Immerse yourself in the culinary traditions of the Cocos Islands with our hands-on cooking workshop. Led by experienced local chefs, you'll learn to prepare authentic dishes that have been passed down through generations.</p>
+      <p>Immerse yourself in the culinary traditions of the Saffron Shores Collective with our hands-on cooking workshop. Led by experienced local chefs, you'll learn to prepare authentic dishes that have been passed down through generations.</p>
       
       <h2>What You'll Learn</h2>
       <p>Master the art of coconut cream extraction, the foundation of many island dishes. Learn to prepare traditional curry pastes using fresh spices and herbs. Cook signature dishes including coconut fish curry, sambal, and sweet coconut desserts.</p>
@@ -68,10 +71,11 @@ export const events = [
       
       <p>No prior cooking experience necessary—our instructors guide you through each step. Vegetarian options available upon request. This workshop is perfect for food enthusiasts wanting to take a piece of island culture home with them.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
     capacity: 12,
     price: 85,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 3,
@@ -81,7 +85,8 @@ export const events = [
     date: "2026-01-29",
     time: "6:00 PM - 10:00 PM",
     location: "Direction Island Beach",
-    shortDescription: "Welcome the Lunar New Year with traditional performances, lanterns, and a spectacular beach celebration.",
+    shortDescription:
+      "Welcome the Lunar New Year with traditional performances, lanterns, and a spectacular beach celebration.",
     description: `
       <p>Ring in the Lunar New Year with an unforgettable beach celebration under the stars. This special event combines traditional customs with the natural beauty of our island paradise.</p>
       
@@ -95,10 +100,11 @@ export const events = [
       
       <p>Bring your family and friends for an evening of cultural exchange, delicious food, and the beauty of celebration by the sea. Red clothing is encouraged for good fortune!</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
     capacity: 300,
     price: 0,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 4,
@@ -108,7 +114,8 @@ export const events = [
     date: "2026-02-05",
     time: "2:00 PM - 4:00 PM",
     location: "Wild Coconut Estate",
-    shortDescription: "Witness traditional coconut oil extraction methods and learn about sustainable coconut farming practices.",
+    shortDescription:
+      "Witness traditional coconut oil extraction methods and learn about sustainable coconut farming practices.",
     description: `
       <p>Discover the journey from coconut palm to finished oil in this fascinating demonstration at Wild Coconut Estate. Learn traditional processing methods that have sustained island life for generations.</p>
       
@@ -128,10 +135,11 @@ export const events = [
       
       <p>This hands-on experience provides deep appreciation for the coconut's importance to island culture and economy. Perfect for families and anyone interested in traditional agriculture and sustainable food production.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
     capacity: 25,
     price: 35,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 5,
@@ -141,9 +149,10 @@ export const events = [
     date: "2026-02-14",
     time: "8:00 AM - 12:00 PM",
     location: "Departure from Home Island Jetty",
-    shortDescription: "Explore pristine coral reefs and swim with tropical fish in crystal-clear lagoon waters.",
+    shortDescription:
+      "Explore pristine coral reefs and swim with tropical fish in crystal-clear lagoon waters.",
     description: `
-      <p>Dive into the underwater wonderland of Cocos Islands with our guided snorkeling adventure. Expert guides lead you to the best spots where coral gardens teem with colorful marine life.</p>
+      <p>Dive into the underwater wonderland of Saffron Shores Collective with our guided snorkeling adventure. Expert guides lead you to the best spots where coral gardens teem with colorful marine life.</p>
       
       <h2>Tour Highlights</h2>
       <p>Visit three premium snorkeling locations, each offering unique underwater landscapes. Swim alongside sea turtles in their natural habitat. Discover vibrant coral formations hosting hundreds of tropical fish species.</p>
@@ -163,10 +172,11 @@ export const events = [
       
       <p>The calm, clear waters of our lagoon offer perfect conditions for underwater exploration. Visibility often exceeds 30 meters, allowing spectacular views of coral formations and marine life.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     capacity: 15,
     price: 95,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 6,
@@ -176,7 +186,8 @@ export const events = [
     date: "2026-03-07",
     time: "9:00 AM - 5:00 PM",
     location: "Home Island Village Square",
-    shortDescription: "Browse handmade crafts, artwork, and traditional items created by local artisans.",
+    shortDescription:
+      "Browse handmade crafts, artwork, and traditional items created by local artisans.",
     description: `
       <p>Celebrate island creativity at our monthly Craft Market Weekend. Local artisans showcase their finest work, from traditional woven goods to contemporary art inspired by island life.</p>
       
@@ -197,10 +208,11 @@ export const events = [
       
       <p>Your purchases directly support island artisans and help preserve traditional crafts. Many items are one-of-a-kind, making perfect souvenirs or gifts. Free admission—come for the morning or stay all day!</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
     capacity: 500,
     price: 0,
-    bookingRequired: false
+    bookingRequired: false,
   },
   {
     id: 7,
@@ -210,7 +222,8 @@ export const events = [
     date: "2026-03-21",
     time: "4:30 PM - 7:30 PM",
     location: "West Island Beach",
-    shortDescription: "Learn to capture stunning sunset photographs with guidance from professional island photographer.",
+    shortDescription:
+      "Learn to capture stunning sunset photographs with guidance from professional island photographer.",
     description: `
       <p>Master the art of sunset photography in one of the world's most beautiful settings. Professional photographer Emma Davis shares techniques for capturing the magic of tropical twilight.</p>
       
@@ -230,10 +243,11 @@ export const events = [
       
       <p>Workshop concludes with refreshments and a photo review session. Share your best shots and receive professional feedback. Emma provides editing tips for enhancing your sunset images.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
     capacity: 10,
     price: 75,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 8,
@@ -243,7 +257,8 @@ export const events = [
     date: "2026-04-05",
     time: "11:00 AM - 4:00 PM",
     location: "Direction Island",
-    shortDescription: "Family-friendly Easter celebration featuring egg hunts, games, BBQ lunch, and beach activities.",
+    shortDescription:
+      "Family-friendly Easter celebration featuring egg hunts, games, BBQ lunch, and beach activities.",
     description: `
       <p>Celebrate Easter island-style with a fun-filled beach party at stunning Direction Island. This family-friendly event combines Easter traditions with tropical paradise for an unforgettable day.</p>
       
@@ -263,10 +278,11 @@ export const events = [
       
       <p>Boat transfers to Direction Island included in ticket price. The event runs from late morning through afternoon, allowing plenty of time to enjoy the island's natural beauty. Create wonderful family memories in paradise!</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
     capacity: 150,
     price: 45,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 9,
@@ -276,7 +292,8 @@ export const events = [
     date: "2026-04-19",
     time: "9:00 AM - 12:00 PM",
     location: "Home Island",
-    shortDescription: "Explore Home Island's rich history and culture with knowledgeable local guides.",
+    shortDescription:
+      "Explore Home Island's rich history and culture with knowledgeable local guides.",
     description: `
       <p>Step back in time with our Cultural Heritage Walking Tour of Home Island. Local guides share stories, history, and traditions that have shaped the Cocos Malay community over nearly two centuries.</p>
       
@@ -297,10 +314,11 @@ export const events = [
       
       <p>This walking tour covers approximately 2 kilometers at a leisurely pace with frequent stops. Wear comfortable shoes and bring water. The tour provides deep insights into Cocos Malay culture rarely experienced by casual visitors.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     capacity: 20,
     price: 55,
-    bookingRequired: true
+    bookingRequired: true,
   },
   {
     id: 10,
@@ -310,7 +328,8 @@ export const events = [
     date: "2026-05-01",
     time: "3:00 PM - 8:00 PM",
     location: "Home Island Community Center",
-    shortDescription: "Join the community for traditional May Day festivities, food, and entertainment.",
+    shortDescription:
+      "Join the community for traditional May Day festivities, food, and entertainment.",
     description: `
       <p>Welcome the month of May with our traditional May Day celebration. This beloved community event brings together residents and visitors for an afternoon and evening of food, music, and island hospitality.</p>
       
@@ -335,37 +354,38 @@ export const events = [
       
       <p>Free admission for all. This is a wonderful opportunity to experience authentic island community spirit and make lasting connections with local residents.</p>
     `,
-    image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
     capacity: 250,
     price: 0,
-    bookingRequired: false
-  }
+    bookingRequired: false,
+  },
 ];
 
 export function getEventBySlug(slug) {
-  return events.find(event => event.slug === slug);
+  return events.find((event) => event.slug === slug);
 }
 
 export function getEventsByCategory(category) {
   if (category === "All Events") {
     return events;
   }
-  return events.filter(event => event.category === category);
+  return events.filter((event) => event.category === category);
 }
 
 export function getEventsByDate(date) {
   // date should be in YYYY-MM-DD format
-  return events.filter(event => event.date === date);
+  return events.filter((event) => event.date === date);
 }
 
 export function getEventsByMonth(year, month) {
   // month is 0-indexed (0 = January, 11 = December)
-  return events.filter(event => {
+  return events.filter((event) => {
     const eventDate = new Date(event.date);
     return eventDate.getFullYear() === year && eventDate.getMonth() === month;
   });
 }
 
 export function getAllEventDates() {
-  return events.map(event => event.date);
+  return events.map((event) => event.date);
 }

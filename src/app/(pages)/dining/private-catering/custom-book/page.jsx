@@ -14,7 +14,7 @@ export default function CustomBooking() {
     duration: "",
     dietaryRequirements: "",
     budgetRange: "",
-    message: ""
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,16 +22,16 @@ export default function CustomBooking() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -45,17 +45,20 @@ export default function CustomBooking() {
         duration: "",
         dietaryRequirements: "",
         budgetRange: "",
-        message: ""
+        message: "",
       });
-      
-      toast.success("Your custom package request has been submitted successfully!", {
-        duration: 4000,
-        style: {
-          background: '#10b981',
-          color: '#fff',
+
+      toast.success(
+        "Your custom package request has been submitted successfully!",
+        {
+          duration: 4000,
+          style: {
+            background: "#10b981",
+            color: "#fff",
+          },
         },
-      });
-      
+      );
+
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
     }, 1500);
@@ -65,17 +68,19 @@ export default function CustomBooking() {
     <>
       {/* Hero Section */}
       <div className="relative flex min-h-[50vh] items-center justify-center bg-zinc-50 dark:bg-black overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1763015584/pexels-cup-of-couple-8472179_akrvum.jpg')",
+            backgroundImage:
+              "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1763015584/pexels-cup-of-couple-8472179_akrvum.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div 
+        <div
           className="absolute top-0 left-0 right-0 h-32 z-[5]"
           style={{
-            background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%)'
+            background:
+              "linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%)",
           }}
         />
         <main className="relative z-10 flex w-full max-w-6xl flex-col items-center justify-center px-6 py-20 text-center sm:px-16">
@@ -83,12 +88,17 @@ export default function CustomBooking() {
             Request Custom Package
           </h1>
           <p className="text-lg text-white/90 max-w-2xl">
-            Let us create a personalized catering experience tailored to your needs
+            Let us create a personalized catering experience tailored to your
+            needs
           </p>
           <div className="flex items-center justify-center space-x-2 text-sm text-white/90 mt-8">
-            <Link href="/" className="hover:text-white transition">Home</Link>
+            <Link href="/" className="hover:text-white transition">
+              Home
+            </Link>
             <span>/</span>
-            <Link href="/dining" className="hover:text-white transition">Dining</Link>
+            <Link href="/dining" className="hover:text-white transition">
+              Dining
+            </Link>
             <span>/</span>
             <span className="text-white font-semibold">Custom Booking</span>
           </div>
@@ -96,20 +106,22 @@ export default function CustomBooking() {
       </div>
 
       {/* Form Section */}
-      <section 
+      <section
         className="relative py-20 px-6 sm:px-16 overflow-hidden"
         style={{
-          backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
+          backgroundImage:
+            "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundColor: "#f2edea"
+          backgroundColor: "#f2edea",
         }}
       >
         {/* Top gradient fade for smooth blend */}
-        <div 
+        <div
           className="absolute top-0 left-0 right-0 h-32 z-0"
           style={{
-            background: 'linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)'
+            background:
+              "linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 50%, rgba(242, 237, 234, 0) 100%)",
           }}
         ></div>
 
@@ -120,7 +132,9 @@ export default function CustomBooking() {
               Tell Us About Your Perfect Experience
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Whether it's a special occasion, corporate event, or unique dietary needs, we'll craft a package that exceeds your expectations.
+              Whether it's a special occasion, corporate event, or unique
+              dietary needs, we'll craft a package that exceeds your
+              expectations.
             </p>
           </div>
 
@@ -137,7 +151,8 @@ export default function CustomBooking() {
             {submitStatus === "success" && (
               <div className="mb-6 p-4 bg-green-50 border-2 border-green-200 rounded-xl">
                 <p className="text-green-800 font-semibold text-center">
-                  ✓ Thank you! Your custom package request has been submitted successfully. We'll contact you soon.
+                  ✓ Thank you! Your custom package request has been submitted
+                  successfully. We'll contact you soon.
                 </p>
               </div>
             )}
@@ -145,7 +160,10 @@ export default function CustomBooking() {
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-semibold text-gray-900 mb-2"
+                >
                   Full Name *
                 </label>
                 <input
@@ -163,7 +181,10 @@ export default function CustomBooking() {
               {/* Email and Phone - Side by Side */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
                     Email Address *
                   </label>
                   <input
@@ -179,7 +200,10 @@ export default function CustomBooking() {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
                     Phone Number *
                   </label>
                   <input
@@ -198,7 +222,10 @@ export default function CustomBooking() {
               {/* Event Date and Guests - Side by Side */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="eventDate" className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label
+                    htmlFor="eventDate"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
                     Event Date *
                   </label>
                   <input
@@ -213,7 +240,10 @@ export default function CustomBooking() {
                 </div>
 
                 <div>
-                  <label htmlFor="guests" className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label
+                    htmlFor="guests"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
                     Number of Guests *
                   </label>
                   <input
@@ -233,7 +263,10 @@ export default function CustomBooking() {
               {/* Package Duration and Budget Range - Side by Side */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="duration" className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label
+                    htmlFor="duration"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
                     Package Duration *
                   </label>
                   <input
@@ -249,7 +282,10 @@ export default function CustomBooking() {
                 </div>
 
                 <div>
-                  <label htmlFor="budgetRange" className="block text-sm font-semibold text-gray-900 mb-2">
+                  <label
+                    htmlFor="budgetRange"
+                    className="block text-sm font-semibold text-gray-900 mb-2"
+                  >
                     Budget Range (Optional)
                   </label>
                   <input
@@ -266,7 +302,10 @@ export default function CustomBooking() {
 
               {/* Dietary Requirements */}
               <div>
-                <label htmlFor="dietaryRequirements" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label
+                  htmlFor="dietaryRequirements"
+                  className="block text-sm font-semibold text-gray-900 mb-2"
+                >
                   Dietary Requirements (Optional)
                 </label>
                 <input
@@ -282,7 +321,10 @@ export default function CustomBooking() {
 
               {/* Special Requirements/Message */}
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold text-gray-900 mb-2"
+                >
                   Special Requirements / Additional Details *
                 </label>
                 <textarea
@@ -303,16 +345,18 @@ export default function CustomBooking() {
                 disabled={isSubmitting}
                 className="w-full bg-gray-900 text-white py-4 rounded-xl font-semibold text-lg hover:bg-gray-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Submitting..." : "Submit Custom Package Request"}
+                {isSubmitting
+                  ? "Submitting..."
+                  : "Submit Custom Package Request"}
               </button>
 
               <p className="text-sm text-gray-600 text-center mt-4">
                 Or email us directly at{" "}
-                <a 
-                  href="mailto:cocostropicalfoods@gmail.com" 
+                <a
+                  href="mailto:info@saffronsandscollective.com"
                   className="text-gray-900 font-semibold underline hover:text-gray-700 transition"
                 >
-                  cocostropicalfoods@gmail.com
+                  info@saffronsandscollective.com
                 </a>
               </p>
             </form>
@@ -326,9 +370,16 @@ export default function CustomBooking() {
               </h4>
               <div className="space-y-2 text-sm text-gray-700">
                 <p>✓ We'll review your request within 24 hours</p>
-                <p>✓ Our team will contact you to discuss details and options</p>
-                <p>✓ We'll create a personalized quote based on your requirements</p>
-                <p>✓ Once approved, we'll handle all the planning and coordination</p>
+                <p>
+                  ✓ Our team will contact you to discuss details and options
+                </p>
+                <p>
+                  ✓ We'll create a personalized quote based on your requirements
+                </p>
+                <p>
+                  ✓ Once approved, we'll handle all the planning and
+                  coordination
+                </p>
               </div>
             </div>
           </div>

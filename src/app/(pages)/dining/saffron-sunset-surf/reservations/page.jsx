@@ -4,14 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function GroupEducationalTours() {
+export default function Reservations() {
+  const [bookingType, setBookingType] = useState("regular"); // 'regular' or 'private'
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    tourDate: "",
-    groupSize: "",
-    tourType: "",
+    date: "",
+    time: "",
+    guests: "",
+    serviceType: "",
     message: "",
   });
 
@@ -38,9 +41,10 @@ export default function GroupEducationalTours() {
         name: "",
         email: "",
         phone: "",
-        tourDate: "",
-        groupSize: "",
-        tourType: "",
+        date: "",
+        time: "",
+        guests: "",
+        serviceType: "",
         message: "",
       });
 
@@ -49,13 +53,21 @@ export default function GroupEducationalTours() {
     }, 1500);
   };
 
-  const tourTypes = [
-    "School Excursion",
-    "University Group",
-    "Corporate Team Building",
-    "Community Organization",
-    "Educational Institution",
-    "Other",
+  const timeSlots = [
+    "5:00 PM",
+    "5:30 PM",
+    "6:00 PM",
+    "6:30 PM",
+    "7:00 PM",
+    "7:30 PM",
+    "8:00 PM",
+    "8:30 PM",
+    "9:00 PM",
+  ];
+  const serviceTypes = [
+    "Monday Mediterranean Dinner",
+    "Thursday Coconut Night Dinner",
+    "Sunday Brunch",
   ];
 
   return (
@@ -67,7 +79,7 @@ export default function GroupEducationalTours() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762426885/pexels-francesco-ungaro-279001_wne3s4.jpg')",
+              "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1763448459/pexels-jonathanborba-29040994_yzlmj5.jpg')",
           }}
         />
 
@@ -85,11 +97,11 @@ export default function GroupEducationalTours() {
 
         {/* Hero Content */}
         <main className="relative z-10 flex w-full max-w-6xl flex-col items-center justify-center px-6 py-20 text-center sm:px-16">
-          <h1 className="mb-6 mt-8 text-5xl font-bold text-white sm:text-6xl lg:text-7xl">
-            Group & Educational Tours
+          <h1 className="mb-6 text-5xl mt-8 font-bold text-white sm:text-6xl lg:text-7xl">
+            Reservations
           </h1>
           <p className="text-lg text-white/90 max-w-2xl">
-            Book your tailored educational experience at Wild Coconut Estate
+            Book your table or inquire about private catering
           </p>
 
           {/* Breadcrumb */}
@@ -98,13 +110,18 @@ export default function GroupEducationalTours() {
               Home
             </Link>
             <span>/</span>
-            <Link href="/about" className="hover:text-white transition">
-              About
+            <Link href="/dining" className="hover:text-white transition">
+              Dining
             </Link>
             <span>/</span>
-            <span className="text-white font-semibold">
-              Group Educational Tours
-            </span>
+            <Link
+              href="/dining/saffron-sunset-surf"
+              className="hover:text-white transition"
+            >
+              Surfer Girl
+            </Link>
+            <span>/</span>
+            <span className="text-white font-semibold">Reservations</span>
           </div>
         </main>
       </div>
@@ -122,30 +139,19 @@ export default function GroupEducationalTours() {
       >
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Educational Experiences Tailored for Your Group
+            Reserve Your Table at Surfer Girl
           </h2>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
-              Planning a school excursion, university program, corporate
-              retreat, or private group gathering? At Saffron Sands Collective,
-              we curate tailored coastal experiences that combine learning,
-              culture, and connection.
-            </p>
-            <p>
-              Our programs can include guided shoreline explorations,
-              interactive culinary sessions, sustainability-focused workshops,
-              cultural storytelling, and hands-on creative activities inspired
-              by coastal living. Each experience is thoughtfully designed to
-              suit your group’s size, interests, and objectives. From
-              educational enrichment to team-building adventures, we ensure
-              every visit is engaging, meaningful, and unforgettable.
+              We take bookings for dinner on Monday and Thursday nights, and
+              breakfast on Sunday mornings.
             </p>
             <p className="font-semibold text-gray-900">
-              To discuss your group’s requirements and begin planning your
-              experience, please get in touch with our team.
+              Limited seating available - bookings are essential.
             </p>
             <p className="text-base text-gray-600">
-              For inquiries, email us at{" "}
+              For private functions or groups of more than 10, please select
+              "Private Catering" below or contact us at{" "}
               <a
                 href="mailto:info@saffronsandscollective.com"
                 className="text-gray-900 font-semibold underline hover:text-gray-700 transition"
@@ -157,7 +163,7 @@ export default function GroupEducationalTours() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
+      {/* Booking Type Selector & Form Section */}
       <section
         className="py-20 px-6 sm:px-16"
         style={{
@@ -169,20 +175,50 @@ export default function GroupEducationalTours() {
         }}
       >
         <div className="mx-auto max-w-3xl">
+          {/* Booking Type Toggle */}
+          <div className="mb-8 flex justify-center gap-4">
+            <button
+              onClick={() => setBookingType("regular")}
+              className={`px-8 py-3 rounded-xl font-semibold transition-all ${
+                bookingType === "regular"
+                  ? "bg-gray-900 text-white shadow-lg"
+                  : "bg-white text-gray-900 border-2 border-gray-300 hover:border-gray-900"
+              }`}
+            >
+              Table Reservation
+            </button>
+            <button
+              onClick={() => setBookingType("private")}
+              className={`px-8 py-3 rounded-xl font-semibold transition-all ${
+                bookingType === "private"
+                  ? "bg-gray-900 text-white shadow-lg"
+                  : "bg-white text-gray-900 border-2 border-gray-300 hover:border-gray-900"
+              }`}
+            >
+              Private Catering
+            </button>
+          </div>
+
+          {/* Form Card */}
           <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-xl p-8 sm:p-12 border border-gray-200">
             <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
-              Book Your Group Tour
+              {bookingType === "regular"
+                ? "Book Your Table"
+                : "Request Private Catering"}
             </h2>
             <p className="text-gray-600 text-center mb-8">
-              Fill out the form below and we'll get back to you shortly
+              {bookingType === "regular"
+                ? "Fill out the form below to reserve your table"
+                : "Tell us about your special event and we'll get back to you"}
             </p>
 
             {/* Success Message */}
             {submitStatus === "success" && (
               <div className="mb-6 p-4 bg-green-50 border-2 border-green-200 rounded-xl">
                 <p className="text-green-800 font-semibold text-center">
-                  ✓ Thank you! Your booking request has been submitted
-                  successfully. We'll contact you soon.
+                  ✓ Thank you! Your{" "}
+                  {bookingType === "regular" ? "reservation" : "request"} has
+                  been submitted successfully. We'll contact you soon.
                 </p>
               </div>
             )}
@@ -194,7 +230,7 @@ export default function GroupEducationalTours() {
                   htmlFor="name"
                   className="block text-sm font-semibold text-gray-900 mb-2"
                 >
-                  Full Name / Organization Representative *
+                  Full Name *
                 </label>
                 <input
                   type="text"
@@ -248,81 +284,125 @@ export default function GroupEducationalTours() {
                 />
               </div>
 
-              {/* Tour Type */}
+              {/* Date */}
               <div>
                 <label
-                  htmlFor="tourType"
+                  htmlFor="date"
                   className="block text-sm font-semibold text-gray-900 mb-2"
                 >
-                  Tour Type *
+                  {bookingType === "regular"
+                    ? "Reservation Date *"
+                    : "Event Date *"}
                 </label>
-                <select
-                  id="tourType"
-                  name="tourType"
-                  value={formData.tourType}
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  value={formData.date}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                >
-                  <option value="">Select tour type...</option>
-                  {tourTypes.map((type) => (
-                    <option key={type} value={type}>
-                      {type}
-                    </option>
-                  ))}
-                </select>
+                />
               </div>
 
-              {/* Date and Group Size - Side by Side */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {/* Tour Date */}
+              {/* Service Type (Regular Only) */}
+              {bookingType === "regular" && (
                 <div>
                   <label
-                    htmlFor="tourDate"
+                    htmlFor="serviceType"
                     className="block text-sm font-semibold text-gray-900 mb-2"
                   >
-                    Preferred Tour Date *
+                    Select Service *
                   </label>
-                  <input
-                    type="date"
-                    id="tourDate"
-                    name="tourDate"
-                    value={formData.tourDate}
+                  <select
+                    id="serviceType"
+                    name="serviceType"
+                    value={formData.serviceType}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                  />
+                  >
+                    <option value="">Choose a service...</option>
+                    {serviceTypes.map((service) => (
+                      <option key={service} value={service}>
+                        {service}
+                      </option>
+                    ))}
+                  </select>
                 </div>
+              )}
 
-                {/* Group Size */}
-                <div>
+              {/* Time and Guests - Side by Side */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {/* Time (Regular Only) */}
+                {bookingType === "regular" && (
+                  <div>
+                    <label
+                      htmlFor="time"
+                      className="block text-sm font-semibold text-gray-900 mb-2"
+                    >
+                      Preferred Time *
+                    </label>
+                    <select
+                      id="time"
+                      name="time"
+                      value={formData.time}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
+                    >
+                      <option value="">Select time...</option>
+                      {timeSlots.map((slot) => (
+                        <option key={slot} value={slot}>
+                          {slot}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {/* Number of Guests */}
+                <div
+                  className={bookingType === "private" ? "sm:col-span-2" : ""}
+                >
                   <label
-                    htmlFor="groupSize"
+                    htmlFor="guests"
                     className="block text-sm font-semibold text-gray-900 mb-2"
                   >
-                    Group Size *
+                    Number of Guests *
                   </label>
                   <input
                     type="number"
-                    id="groupSize"
-                    name="groupSize"
-                    value={formData.groupSize}
+                    id="guests"
+                    name="guests"
+                    value={formData.guests}
                     onChange={handleChange}
                     required
                     min="1"
+                    max={bookingType === "regular" ? "10" : undefined}
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent"
-                    placeholder="Number of participants"
+                    placeholder={
+                      bookingType === "regular" ? "1-10 guests" : "10+ guests"
+                    }
                   />
+                  {bookingType === "regular" && (
+                    <p className="text-xs text-gray-500 mt-1">
+                      For groups larger than 10, please select "Private
+                      Catering"
+                    </p>
+                  )}
                 </div>
               </div>
 
-              {/* Message/Special Requirements */}
+              {/* Message/Special Requests */}
               <div>
                 <label
                   htmlFor="message"
                   className="block text-sm font-semibold text-gray-900 mb-2"
                 >
-                  Message / Special Requirements
+                  {bookingType === "regular"
+                    ? "Special Requests (Optional)"
+                    : "Event Details & Requirements"}
                 </label>
                 <textarea
                   id="message"
@@ -331,7 +411,11 @@ export default function GroupEducationalTours() {
                   onChange={handleChange}
                   rows="5"
                   className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-gray-900 focus:border-transparent resize-none"
-                  placeholder="Tell us about your group, age range, specific interests, dietary requirements, or any special requests..."
+                  placeholder={
+                    bookingType === "regular"
+                      ? "Dietary requirements, celebrations, or any special requests..."
+                      : "Tell us about your event, menu preferences, dietary requirements, or any special requests..."
+                  }
                 />
               </div>
 
@@ -341,13 +425,17 @@ export default function GroupEducationalTours() {
                 disabled={isSubmitting}
                 className="w-full bg-gray-900 text-white py-4 rounded-xl font-semibold text-lg hover:bg-gray-800 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Submitting..." : "Submit Booking Request"}
+                {isSubmitting
+                  ? "Submitting..."
+                  : bookingType === "regular"
+                    ? "Reserve Table"
+                    : "Submit Request"}
               </button>
 
               <p className="text-sm text-gray-600 text-center mt-4">
                 Or email us directly at{" "}
                 <a
-                  href="mailto:        info@saffronsandscollective.com"
+                  href="mailto:info@saffronsandscollective.com"
                   className="text-gray-900 font-semibold underline hover:text-gray-700 transition"
                 >
                   info@saffronsandscollective.com

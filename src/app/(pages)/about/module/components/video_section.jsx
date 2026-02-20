@@ -5,7 +5,7 @@ export default function VideoSection() {
     <section 
       className="relative py-10 px-6 sm:px-16 overflow-hidden"
       style={{
-        backgroundImage: "url('https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407603/palm-shadow-1_ire8qu.png')",
+        backgroundImage: "url('https://res.cloudinary.com/dwau5poqz/video/upload/v1771522929/5670197-hd_1920_1080_30fps_fnho3z.mp4')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundColor: "#f2edea"
@@ -27,7 +27,7 @@ export default function VideoSection() {
             Our Island Life
           </h2>
           <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Experience the beauty, culture, and daily rhythms of Cocos Islands through the eyes of our community
+            Experience the beauty, culture, and daily rhythms of Saffron Sands Islands through the eyes of our community
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function VideoSection() {
               {/* For YouTube: https://www.youtube.com/embed/YOUR_VIDEO_ID */}
               {/* For Vimeo: https://player.vimeo.com/video/YOUR_VIDEO_ID */}
               <iframe
-                src="https://www.youtube.com/embed/L1wCR4itlUA"
+                src="https://res.cloudinary.com/dwau5poqz/video/upload/v1771522929/5670197-hd_1920_1080_30fps_fnho3z.mp4"
                 title="Our Island Life Video"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

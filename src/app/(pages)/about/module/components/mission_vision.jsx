@@ -23,12 +23,13 @@ export default function MissionVision() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-zinc-900 sm:text-5xl mb-4">
-            Our Mission & Vision
-          </h2>
-          <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-            Guiding principles that drive our passion for authentic island experiences
-          </p>
+  <h2 className="text-4xl font-bold text-zinc-900 sm:text-5xl mb-4">
+  Our Purpose & Promise
+</h2>
+<p className="text-lg text-zinc-600 max-w-2xl mx-auto">
+  Crafting meaningful coastal experiences inspired by culture, community, and the ocean.
+</p>
+
         </div>
 
         {/* Bento-Box Grid Container */}
@@ -53,12 +54,14 @@ export default function MissionVision() {
               <div className="relative h-full flex flex-col justify-end p-8 sm:p-10">
             
                 
-                <h3 className="text-3xl font-bold text-white mb-4">Our Mission</h3>
-                <p className="text-base text-white/90 leading-relaxed max-w-xl">
-                  To preserve and celebrate the authentic culture of the Cocos Islands by creating 
-                  meaningful connections between visitors and our local artisan community, while 
-                  supporting sustainable tourism that benefits our island home and its people.
-                </p>
+          <h3 className="text-3xl font-bold text-white mb-4">Our Purpose</h3>
+<p className="text-base text-white/90 leading-relaxed max-w-xl">
+  At Saffron Sands Collective, our purpose is to design immersive coastal experiences 
+  that connect people to the rhythm of the sea. Through thoughtfully curated tours, 
+  seasonal cuisine, and community-led storytelling, we celebrate the spirit of island living 
+  while fostering sustainability and local collaboration.
+</p>
+
               </div>
             </div>
           </div>
@@ -82,12 +85,13 @@ export default function MissionVision() {
               <div className="relative h-full flex flex-col justify-end p-8 sm:p-10">
           
                 
-                <h3 className="text-3xl font-bold text-white mb-4">Our Vision</h3>
-                <p className="text-base text-white/90 leading-relaxed">
-                  To become the leading model for community-driven tourism, where every visitor 
-                  leaves with a deeper appreciation for island culture, and every local artisan 
-                  thrives through their craft.
-                </p>
+         <h3 className="text-3xl font-bold text-white mb-4">Our Promise</h3>
+<p className="text-base text-white/90 leading-relaxed">
+  We envision a future where travel is intentional, dining is experiential, and every 
+  sunset shared becomes a lasting memory. Saffron Sands Collective strives to create 
+  a space where culture, creativity, and coastal beauty come together in harmony.
+</p>
+
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ export default function Home() {
         <main className="relative z-10 flex w-full max-w-5xl flex-col items-center justify-center px-6 py-32 text-center sm:px-16 mt-16 lg:mt-16">
           {/* Headline */}
           <h1 className="mb-6 text-5xl font-bold text-white sm:text-6xl lg:text-7xl">
-            Discover Cocos Artisans Collective
+            Discover Saffron Sands Collective
           </h1>
 
           {/* Mission Statement */}
@@ -68,7 +68,6 @@ export default function Home() {
         </main>
       </div>
       <AboutPreview />
-      {/* ✅ Step 3: Pass handleSearch to BookingWidget */}
       <BookingWidget onSearch={handleSearch}/>
       <FeaturedExperiences/>
       <ShopPreview/>

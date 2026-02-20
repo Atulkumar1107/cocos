@@ -7,24 +7,24 @@ export default function FeaturedExperiences() {
   const featuredPlaces = [
     {
       id: 1,
-      name: "Salty's Grill & Bakery",
+      name: "Saffron Shores Collective",
       description: "Visit our café, bakery and takeway joint near the airport for coffee, cakes, pizza and other tasty treats.",
       image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
-      link: "/saltys",
+      link: "/dining/saffron-shores-collective",
     },
     {
       id: 2,
-      name: "Surfer Girl Restaurant & Brewery",
+      name: "Saffron Sunset Surf",
       description: "Our outdoor restaurant located on the beach is the perfect place for sunset dinner and drinks.",
       image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
-      link: "/surfer-girl",
+      link: "/dining/saffron-sunset-surf",
     },
     {
       id: 3,
       name: "Wild Coconut Discovery Center",
       description: "Discover the fascinating world of coconut production through hands on demonstrations and tasty samples.",
       image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
-      link: "/wild-coconut-estate",
+      link: "/tours/wild-coconut-discovery",
     },
   ];
 

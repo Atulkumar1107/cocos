@@ -38,10 +38,10 @@ const Header = () => {
     return `${user.firstName?.[0] || ""}${user.lastName?.[0] || ""}`.toUpperCase();
   };
 
-  const isSaltysPage = pathname?.startsWith("/dining/saltys-cafe");
-  const isSurferPage = pathname?.startsWith(
-    "/dining/surfer-girl-restaurant-brewery",
+  const isSaltysPage = pathname?.startsWith(
+    "/dining/saffron-shores-collective",
   );
+  const isSurferPage = pathname?.startsWith("/dining/saffron-sunset-surf");
 
   // Get cart item count from Redux
   const cartItemCount = useSelector(selectCartItemCount);
@@ -57,6 +57,7 @@ const Header = () => {
       href: "/about",
       items: [
         { title: "Wild Coconut Estate", href: "/about/wild-coconut-estate" },
+          { title: "Group Educational Tours", href: "/about/group-educational-tours" },
       ],
     },
     {
@@ -64,10 +65,13 @@ const Header = () => {
       hasDropdown: true,
       href: "/dining",
       items: [
-        { title: "Saltys Café", href: "/dining/saltys-cafe" },
         {
-          title: "Surfer Girl Restaurant",
-          href: "/dining/surfer-girl-restaurant-brewery",
+          title: "Saffron Shores Collective",
+          href: "/dining/saffron-shores-collective",
+        },
+        {
+          title: "Saffron Sunset Surf",
+          href: "/dining/saffron-sunset-surf",
         },
         { title: "Private Catering", href: "/dining/private-catering" },
       ],
@@ -222,17 +226,17 @@ const Header = () => {
             <Image
               src={
                 isSaltysPage
-                  ? "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762425359/WhatsApp_Image_2025-10-22_at_12.04.38_PM_rlct60.jpg"
+                  ? "https://res.cloudinary.com/dwau5poqz/image/upload/v1771520722/ChatGPT_Image_Feb_19_2026_10_35_03_PM_kb4vok.png"
                   : isSurferPage
-                    ? "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763446455/Blog_Banner_6_pgvo1h.png"
-                    : "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762408098/logo_bqpdhz.jpg"
+                    ? "https://res.cloudinary.com/dwau5poqz/image/upload/v1771521170/ChatGPT_Image_Feb_19_2026_10_42_39_PM_ncmy16.png"
+                    : "https://res.cloudinary.com/dwau5poqz/image/upload/v1771520475/ChatGPT_Image_Feb_19_2026_10_31_01_PM_dn7luk.png"
               }
               alt={
                 isSaltysPage
-                  ? "Salty's Café"
+                  ? "Saffron Shores Collective"
                   : isSurferPage
-                    ? "Surfer Girl Restaurant"
-                    : "Cocos Keeling Islands"
+                    ? "Saffron Sunset Surf"
+                    : "Saffron Sands Collective"
               }
               width={80}
               height={80}

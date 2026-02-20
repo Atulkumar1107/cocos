@@ -2,92 +2,96 @@ export const blogPosts = [
   {
     id: 1,
     slug: "discovering-cocos-islands-hidden-gems",
-    title: "Discovering Cocos Islands Hidden Gems",
-    excerpt: "Explore the secret spots and lesser-known beaches that make the Cocos Islands a true paradise. From secluded coves to pristine snorkeling locations, discover the hidden treasures waiting to be found.",
+    title: "Discovering Saffron Shores Collective Hidden Gems",
+    excerpt:
+      "Explore the secret spots and lesser-known beaches that make the Saffron Shores Collective a true paradise. From secluded coves to pristine snorkeling locations, discover the hidden treasures waiting to be found.",
     author: "Sarah Mitchell",
     date: "2024-11-15",
     category: "Island Life",
     readTime: "5 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     content: [
       {
-        type: 'text',
-        html: `<p>The Cocos (Keeling) Islands are more than just postcard-perfect beaches and crystal-clear lagoons. Beyond the well-trodden paths lie hidden gems that few visitors ever discover. These secret spots offer intimate encounters with nature and moments of pure tranquility that define the true essence of island paradise.</p>`
+        type: "text",
+        html: `<p>The Cocos (Keeling) Islands are more than just postcard-perfect beaches and crystal-clear lagoons. Beyond the well-trodden paths lie hidden gems that few visitors ever discover. These secret spots offer intimate encounters with nature and moments of pure tranquility that define the true essence of island paradise.</p>`,
       },
       {
-        type: 'image',
-        src: 'https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg',
-        alt: 'Secret cove on Direction Island',
-        caption: 'A hidden cove on Direction Island, known only to locals',
-        align: 'center'
+        type: "image",
+        src: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
+        alt: "Secret cove on Direction Island",
+        caption: "A hidden cove on Direction Island, known only to locals",
+        align: "center",
       },
       {
-        type: 'text',
+        type: "text",
         html: `
           <h2>Direction Island's Secret Cove</h2>
           <p>While most visitors flock to the main beach on Direction Island, a short walk through coconut groves reveals a secluded cove known only to locals. Here, the water glows with an ethereal turquoise hue, and the coral reef teems with marine life just meters from shore. It's the perfect spot for those seeking solitude and unparalleled snorkeling.</p>
-        `
+        `,
       },
       {
-        type: 'image',
-        src: 'https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg',
-        alt: 'Abandoned settlement ruins',
-        caption: 'Historic ruins tell stories of the island\'s past',
-        align: 'right'
+        type: "image",
+        src: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+        alt: "Abandoned settlement ruins",
+        caption: "Historic ruins tell stories of the island's past",
+        align: "right",
       },
       {
-        type: 'text',
+        type: "text",
         html: `
           <h2>The Abandoned Settlement</h2>
           <p>On Home Island's eastern shore, remnants of an old settlement tell stories of the islands' fascinating history. Overgrown by tropical vegetation, these ruins offer a glimpse into the past while providing stunning sunset views across the Indian Ocean. Local guides can share tales of the families who once called this place home.</p>
           <p>The settlement dates back to the early colonial period when the islands were first inhabited. Stone foundations and crumbling walls are slowly being reclaimed by nature, creating a hauntingly beautiful landscape that photographers love.</p>
-        `
+        `,
       },
       {
-        type: 'text',
+        type: "text",
         html: `
           <h2>Turtle Nesting Beaches</h2>
           <p>Between November and March, several unmarked beaches become nesting grounds for green and hawksbill turtles. These protected areas are accessible only with proper permits and local guides, ensuring minimal disturbance to these magnificent creatures. Witnessing a turtle laying her eggs under the moonlight is an unforgettable experience.</p>
-        `
+        `,
       },
       {
-        type: 'image',
-        src: 'https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg',
-        alt: 'Lighthouse trail view',
-        caption: 'Panoramic views from the lighthouse trail',
-        align: 'left'
+        type: "image",
+        src: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+        alt: "Lighthouse trail view",
+        caption: "Panoramic views from the lighthouse trail",
+        align: "left",
       },
       {
-        type: 'text',
+        type: "text",
         html: `
           <h2>The Lighthouse Trail</h2>
           <p>A hidden walking trail leads to an old lighthouse keeper's cottage, offering panoramic views of the entire atoll. The path winds through native forest where rare bird species can be spotted, including the endemic Cocos Buff-banded Rail. Pack a picnic and spend the afternoon watching frigate birds soar overhead.</p>
           <p>The trail is moderately challenging, taking about 45 minutes each way. Wear sturdy shoes and bring plenty of water. Early morning is the best time to hike, when temperatures are cooler and wildlife is most active.</p>
-        `
+        `,
       },
       {
-        type: 'text',
+        type: "text",
         html: `
           <h2>Local Fishing Spots</h2>
           <p>Ask any local fisherman, and they'll tell you the best fishing spots aren't on any map. These time-tested locations, passed down through generations, offer chances to catch everything from trevally to Spanish mackerel. Join a local fishing tour to learn traditional techniques and perhaps catch your dinner.</p>
           <p>Remember, these hidden gems remain special because they're treated with respect. Always follow Leave No Trace principles, respect private property, and consider hiring local guides who can share their knowledge while ensuring these places remain pristine for future generations.</p>
-        `
-      }
+        `,
+      },
     ],
-    tags: ["Hidden Gems", "Exploration", "Local Tips", "Nature"]
+    tags: ["Hidden Gems", "Exploration", "Local Tips", "Nature"],
   },
   {
     id: 2,
     slug: "traditional-coconut-recipes-from-our-kitchen",
     title: "Traditional Coconut Recipes From Our Kitchen",
-    excerpt: "Learn to cook authentic island dishes using fresh coconuts. These traditional recipes have been passed down through generations and showcase the versatility of this amazing ingredient.",
+    excerpt:
+      "Learn to cook authentic island dishes using fresh coconuts. These traditional recipes have been passed down through generations and showcase the versatility of this amazing ingredient.",
     author: "Chef Maria Santos",
     date: "2024-11-10",
     category: "Recipes",
     readTime: "8 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
     content: `
-      <p>Coconut is more than just a tropical ingredient—it's the heart and soul of Cocos Islands cuisine. Every part of the coconut finds its way into our traditional dishes, from the sweet water inside young coconuts to the rich cream extracted from mature meat. These recipes represent generations of island culinary wisdom.</p>
+      <p>Coconut is more than just a tropical ingredient—it's the heart and soul of Saffron Shores Collective cuisine. Every part of the coconut finds its way into our traditional dishes, from the sweet water inside young coconuts to the rich cream extracted from mature meat. These recipes represent generations of island culinary wisdom.</p>
 
       <h2>Traditional Coconut Curry</h2>
       <p>Our signature curry combines fresh coconut cream with locally caught fish and a blend of spices that reflects the islands' Malay heritage. The key is using freshly grated coconut—the difference in flavor is remarkable. Serve over steamed rice with a side of sambal for an authentic island meal.</p>
@@ -117,18 +121,20 @@ export const blogPosts = [
 
       <p>These recipes are best enjoyed fresh, shared with family and friends in the tradition of island hospitality. Don't be afraid to adjust spices to your taste—cooking is as much about intuition as it is about following recipes.</p>
     `,
-    tags: ["Recipes", "Coconut", "Traditional Cooking", "Island Cuisine"]
+    tags: ["Recipes", "Coconut", "Traditional Cooking", "Island Cuisine"],
   },
   {
     id: 3,
     slug: "sustainable-tourism-on-cocos-islands",
-    title: "Sustainable Tourism on Cocos Islands",
-    excerpt: "How we're preserving paradise for future generations. Discover the initiatives and practices that make tourism on the Cocos Islands both enjoyable and environmentally responsible.",
+    title: "Sustainable Tourism on Saffron Shores Collective",
+    excerpt:
+      "How we're preserving paradise for future generations. Discover the initiatives and practices that make tourism on the Saffron Shores Collective both enjoyable and environmentally responsible.",
     author: "Dr. James Chen",
     date: "2024-11-05",
     category: "Sustainability",
     readTime: "6 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
     content: `
       <p>The Cocos (Keeling) Islands are a pristine paradise, and keeping them that way requires thoughtful, sustainable tourism practices. As visitor numbers grow, we've implemented comprehensive strategies to ensure that tourism enriches both visitors and local communities while protecting the fragile ecosystems that make these islands special.</p>
 
@@ -150,20 +156,22 @@ export const blogPosts = [
       <h2>Visitor Education Programs</h2>
       <p>Upon arrival, visitors receive orientation on island conservation practices. Interpretive signs along walking trails explain ecosystems and proper etiquette. Rangers lead educational tours that highlight conservation challenges and successes, fostering appreciation for the delicate balance required to maintain paradise.</p>
 
-      <p>Sustainable tourism isn't about limiting enjoyment—it's about ensuring that the magic of the Cocos Islands endures for generations to come. Every visitor plays a role in this mission, and together, we're proving that tourism and conservation can coexist harmoniously.</p>
+      <p>Sustainable tourism isn't about limiting enjoyment—it's about ensuring that the magic of the Saffron Shores Collective endures for generations to come. Every visitor plays a role in this mission, and together, we're proving that tourism and conservation can coexist harmoniously.</p>
     `,
-    tags: ["Sustainability", "Conservation", "Eco-Tourism", "Community"]
+    tags: ["Sustainability", "Conservation", "Eco-Tourism", "Community"],
   },
   {
     id: 4,
     slug: "best-snorkeling-spots-cocos-islands",
-    title: "Best Snorkeling Spots in Cocos Islands",
-    excerpt: "Dive into crystal-clear waters and explore vibrant coral reefs. From beginners to experienced snorkelers, find the perfect underwater adventure in our comprehensive guide to the best snorkeling locations.",
+    title: "Best Snorkeling Spots in Saffron Shores Collective",
+    excerpt:
+      "Dive into crystal-clear waters and explore vibrant coral reefs. From beginners to experienced snorkelers, find the perfect underwater adventure in our comprehensive guide to the best snorkeling locations.",
     author: "Tom Reynolds",
     date: "2024-10-28",
     category: "Tours",
     readTime: "7 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
     content: `
       <p>The Cocos (Keeling) Islands offer some of the most spectacular snorkeling in the Indian Ocean. With visibility often exceeding 30 meters and water temperatures hovering around 27°C year-round, every day is perfect for exploring underwater wonders. Here's your guide to the best spots, from shallow reefs perfect for beginners to dramatic drop-offs for the adventurous.</p>
 
@@ -201,20 +209,22 @@ export const blogPosts = [
         <li>Stay hydrated and take breaks</li>
       </ul>
 
-      <p>The underwater world of Cocos Islands is a privilege to explore. By following responsible snorkeling practices, we ensure these reefs remain vibrant for future generations to enjoy.</p>
+      <p>The underwater world of Saffron Shores Collective is a privilege to explore. By following responsible snorkeling practices, we ensure these reefs remain vibrant for future generations to enjoy.</p>
     `,
-    tags: ["Snorkeling", "Marine Life", "Adventure", "Water Sports"]
+    tags: ["Snorkeling", "Marine Life", "Adventure", "Water Sports"],
   },
   {
     id: 5,
     slug: "cocos-malay-culture-and-heritage",
     title: "Cocos Malay Culture and Heritage",
-    excerpt: "Experience the rich traditions of the Cocos Malay community. From ancient customs to contemporary island life, discover the cultural tapestry that makes the Cocos Islands unique.",
+    excerpt:
+      "Experience the rich traditions of the Cocos Malay community. From ancient customs to contemporary island life, discover the cultural tapestry that makes the Saffron Shores Collective unique.",
     author: "Aisha Rahman",
     date: "2024-10-20",
     category: "Island Life",
     readTime: "9 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     content: `
       <p>The Cocos Malay people have called these islands home for nearly two centuries, creating a unique culture that blends Malay, Scottish, and English influences. Their stories, traditions, and daily life reflect a remarkable journey of adaptation and preservation in this remote corner of the Indian Ocean.</p>
 
@@ -244,20 +254,22 @@ export const blogPosts = [
 
       <p>The story of the Cocos Malay people is one of resilience, adaptation, and cultural pride. Their traditions enrich the islands, offering visitors more than beautiful beaches—a chance to connect with a living culture that has flourished in paradise for nearly 200 years.</p>
     `,
-    tags: ["Culture", "Heritage", "Malay Community", "Traditions"]
+    tags: ["Culture", "Heritage", "Malay Community", "Traditions"],
   },
   {
     id: 6,
     slug: "photographing-paradise-tips-and-tricks",
     title: "Photographing Paradise: Tips and Tricks",
-    excerpt: "Capture the beauty of Cocos Islands through your lens. Professional photography tips for stunning island shots, from golden hour beach scenes to underwater macro photography.",
+    excerpt:
+      "Capture the beauty of Saffron Shores Collective through your lens. Professional photography tips for stunning island shots, from golden hour beach scenes to underwater macro photography.",
     author: "Emma Photography",
     date: "2024-10-15",
     category: "Island Life",
     readTime: "6 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
     content: `
-      <p>The Cocos Islands are a photographer's dream—turquoise lagoons, palm-fringed beaches, and spectacular marine life create endless opportunities for stunning images. Whether you're shooting with a professional camera or smartphone, these tips will help you capture the magic of paradise.</p>
+      <p>The Saffron Shores Collective are a photographer's dream—turquoise lagoons, palm-fringed beaches, and spectacular marine life create endless opportunities for stunning images. Whether you're shooting with a professional camera or smartphone, these tips will help you capture the magic of paradise.</p>
 
       <h2>Timing is Everything</h2>
       <p>Golden hour—the first hour after sunrise and last hour before sunset—transforms ordinary scenes into extraordinary images. The warm, soft light illuminates beaches beautifully and creates long shadows that add depth and drama. Set your alarm early; sunrise shots are worth the effort. Midday light can be harsh, but it's perfect for underwater photography when the sun is directly overhead.</p>
@@ -283,22 +295,24 @@ export const blogPosts = [
       <h2>Respecting Privacy and Culture</h2>
       <p>Always ask permission before photographing people, especially in cultural settings. Some areas on Home Island are private or religiously significant—respect "no photography" signs. Share benefits of tourism photography by purchasing from local photographers and crediting sources appropriately.</p>
 
-      <p>The best camera is the one you have with you. Whether it's a professional DSLR or smartphone, these principles will help you create images that capture not just what the Cocos Islands look like, but how they made you feel.</p>
+      <p>The best camera is the one you have with you. Whether it's a professional DSLR or smartphone, these principles will help you create images that capture not just what the Saffron Shores Collective look like, but how they made you feel.</p>
     `,
-    tags: ["Photography", "Tips", "Travel", "Visual Arts"]
+    tags: ["Photography", "Tips", "Travel", "Visual Arts"],
   },
   {
     id: 7,
     slug: "seasonal-guide-to-cocos-islands",
-    title: "Seasonal Guide to Cocos Islands",
-    excerpt: "When to visit for the best experience. Discover what each season offers—from whale shark encounters to perfect beach weather—and plan your ideal island getaway.",
+    title: "Seasonal Guide to Saffron Shores Collective",
+    excerpt:
+      "When to visit for the best experience. Discover what each season offers—from whale shark encounters to perfect beach weather—and plan your ideal island getaway.",
     author: "Travel Expert Team",
     date: "2024-10-08",
     category: "Tours",
     readTime: "7 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
     content: `
-      <p>The Cocos Islands enjoy year-round tropical weather, but each season offers unique experiences and conditions. Understanding seasonal variations helps you plan the perfect visit, whether you're seeking ideal snorkeling conditions, hoping to see specific wildlife, or looking for the best deals.</p>
+      <p>The Saffron Shores Collective enjoy year-round tropical weather, but each season offers unique experiences and conditions. Understanding seasonal variations helps you plan the perfect visit, whether you're seeking ideal snorkeling conditions, hoping to see specific wildlife, or looking for the best deals.</p>
 
       <h2>Dry Season (April - October)</h2>
       <p>This is peak season for good reason. Southeast trade winds bring clear skies, calm seas, and comfortable temperatures averaging 27°C. Humidity is lower than the wet season, making outdoor activities more comfortable. Visibility for snorkeling and diving is exceptional, often exceeding 30 meters.</p>
@@ -332,22 +346,24 @@ export const blogPosts = [
       <h2>Off-Peak Advantages</h2>
       <p>Visiting during shoulder seasons (April-May, October-November) offers the best of both worlds—good weather with fewer crowds and better rates. Accommodation may offer special deals, and you'll have beaches and snorkeling spots largely to yourself.</p>
 
-      <p>Ultimately, there's no bad time to visit the Cocos Islands. Each season offers unique experiences and natural phenomena. Consider what matters most to you—perfect weather, specific wildlife encounters, cultural events, or value—and plan accordingly.</p>
+      <p>Ultimately, there's no bad time to visit the Saffron Shores Collective. Each season offers unique experiences and natural phenomena. Consider what matters most to you—perfect weather, specific wildlife encounters, cultural events, or value—and plan accordingly.</p>
     `,
-    tags: ["Travel Planning", "Seasons", "Weather", "Wildlife"]
+    tags: ["Travel Planning", "Seasons", "Weather", "Wildlife"],
   },
   {
     id: 8,
     slug: "island-wellness-and-relaxation",
     title: "Island Wellness and Relaxation",
-    excerpt: "Find your zen in paradise. From beachside yoga to traditional massage, discover how to achieve complete relaxation and rejuvenation on the Cocos Islands.",
+    excerpt:
+      "Find your zen in paradise. From beachside yoga to traditional massage, discover how to achieve complete relaxation and rejuvenation on the Saffron Shores Collective.",
     author: "Wellness Guru Maya",
     date: "2024-09-30",
     category: "Island Life",
     readTime: "5 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     content: `
-      <p>In our fast-paced world, the Cocos Islands offer something increasingly rare—an opportunity to truly disconnect and restore balance. The islands' natural beauty, peaceful atmosphere, and wellness traditions create the perfect environment for physical and mental rejuvenation.</p>
+      <p>In our fast-paced world, the Saffron Shores Collective offer something increasingly rare—an opportunity to truly disconnect and restore balance. The islands' natural beauty, peaceful atmosphere, and wellness traditions create the perfect environment for physical and mental rejuvenation.</p>
 
       <h2>The Healing Power of Nature</h2>
       <p>Simply being in nature reduces stress hormones and lowers blood pressure. The sound of waves, the sight of endless horizons, and the feel of warm sand beneath your feet trigger our relaxation response. Start each day with a barefoot walk on the beach—this grounding practice connects you to the earth and calms the nervous system.</p>
@@ -373,22 +389,24 @@ export const blogPosts = [
       <h2>Creative Expression</h2>
       <p>Relaxation frees creative energy. Bring a journal to record thoughts and experiences, sketch island scenes, or try photography without the pressure of social media. Creative expression without judgment or audience is deeply therapeutic.</p>
 
-      <p>Wellness on the Cocos Islands isn't about structured programs or expensive treatments—it's about embracing simplicity, connecting with nature, and allowing yourself to truly rest. The islands offer something money can't buy: time and space to simply be.</p>
+      <p>Wellness on the Saffron Shores Collective isn't about structured programs or expensive treatments—it's about embracing simplicity, connecting with nature, and allowing yourself to truly rest. The islands offer something money can't buy: time and space to simply be.</p>
     `,
-    tags: ["Wellness", "Relaxation", "Health", "Mindfulness"]
+    tags: ["Wellness", "Relaxation", "Health", "Mindfulness"],
   },
   {
     id: 9,
     slug: "local-artisans-and-their-crafts",
     title: "Local Artisans and Their Crafts",
-    excerpt: "Meet the makers who keep traditional crafts alive. Discover the stories behind handwoven baskets, coconut shell art, and other beautiful items created by island artisans.",
+    excerpt:
+      "Meet the makers who keep traditional crafts alive. Discover the stories behind handwoven baskets, coconut shell art, and other beautiful items created by island artisans.",
     author: "Craft Enthusiast Lisa",
     date: "2024-09-22",
     category: "Island Life",
     readTime: "8 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407439/pexels-vladimirsrajber-18631417_th5dii.jpg",
     content: `
-      <p>Behind every handcrafted item in the Cocos Islands is a story of tradition, skill, and dedication. These artisans are more than makers—they're cultural custodians, keeping ancient techniques alive while creating functional art that connects visitors to island heritage.</p>
+      <p>Behind every handcrafted item in the Saffron Shores Collective is a story of tradition, skill, and dedication. These artisans are more than makers—they're cultural custodians, keeping ancient techniques alive while creating functional art that connects visitors to island heritage.</p>
 
       <h2>Fatimah - Master Weaver</h2>
       <p>At 67, Fatimah has been weaving coconut fiber since she was a young girl. Her grandmother taught her the intricate patterns that identify Cocos Malay work. Each morning, she sits in her courtyard, fingers moving with practiced precision as she creates mats, bags, and baskets. "The young people, they want fast things from shops," she says with a gentle smile. "But handmade items have soul. They carry our history."</p>
@@ -422,18 +440,20 @@ export const blogPosts = [
 
       <p>These artisans are guardians of knowledge that could easily be lost. By valuing their work, we help ensure these traditions survive and evolve, remaining vital parts of island life rather than museum relics.</p>
     `,
-    tags: ["Artisans", "Crafts", "Traditional Skills", "Shopping"]
+    tags: ["Artisans", "Crafts", "Traditional Skills", "Shopping"],
   },
   {
     id: 10,
     slug: "fishing-traditions-and-techniques",
     title: "Fishing Traditions and Techniques",
-    excerpt: "Learn from generations of island fishermen. Traditional fishing methods, sustainable practices, and the deep connection between the Cocos Malay people and the sea.",
+    excerpt:
+      "Learn from generations of island fishermen. Traditional fishing methods, sustainable practices, and the deep connection between the Cocos Malay people and the sea.",
     author: "Captain Rashid",
     date: "2024-09-15",
     category: "Island Life",
     readTime: "7 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1763014661/pexels-valeriya-kobzar-42371713-11790418_qg4q8s.jpg",
     content: `
       <p>For the Cocos Malay community, fishing isn't just an occupation—it's a way of life deeply woven into cultural identity. Generations of fishermen have developed intimate knowledge of these waters, reading currents, weather patterns, and fish behavior with expertise passed down through oral tradition.</p>
 
@@ -469,20 +489,22 @@ export const blogPosts = [
 
       <p>Fishing traditions embody the Cocos Malay relationship with the sea—practical knowledge wrapped in cultural meaning. By understanding these traditions, visitors gain insight into a way of life where humans live in balance with nature, taking only what's needed while ensuring abundance for future generations.</p>
     `,
-    tags: ["Fishing", "Traditions", "Sustainability", "Culture"]
+    tags: ["Fishing", "Traditions", "Sustainability", "Culture"],
   },
   {
     id: 11,
     slug: "coconut-processing-from-tree-to-table",
     title: "Coconut Processing: From Tree to Table",
-    excerpt: "The journey of a coconut from palm to product. Discover the fascinating process of coconut harvesting, processing, and the incredible versatility of this amazing fruit.",
+    excerpt:
+      "The journey of a coconut from palm to product. Discover the fascinating process of coconut harvesting, processing, and the incredible versatility of this amazing fruit.",
     author: "Agricultural Expert",
     date: "2024-09-08",
     category: "Sustainability",
     readTime: "6 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407531/pexels-rachel-claire-5864291_o1i0nt.jpg",
     content: `
-      <p>Coconuts are life on the Cocos Islands—providing food, building materials, crafts, and income. Understanding the journey from tree to table reveals the ingenuity required to fully utilize every part of this remarkable fruit while appreciating the labor behind products we often take for granted.</p>
+      <p>Coconuts are life on the Saffron Shores Collective—providing food, building materials, crafts, and income. Understanding the journey from tree to table reveals the ingenuity required to fully utilize every part of this remarkable fruit while appreciating the labor behind products we often take for granted.</p>
 
       <h2>Harvesting</h2>
       <p>Skilled climbers scale 20-meter palms daily, using minimal equipment beyond strength, balance, and experience. They identify ripe nuts by color and sound—tapping a coconut produces a distinct tone that tells whether it's ready. Young climbers learn from experienced ones, often family members, in an apprenticeship that takes years to master.</p>
@@ -523,18 +545,20 @@ export const blogPosts = [
 
       <p>Understanding coconut processing reveals the resourcefulness required to thrive on a remote island. It's a reminder that sustainability isn't new—it's how humans lived for millennia, using everything nature provides while wasting nothing.</p>
     `,
-    tags: ["Coconuts", "Processing", "Agriculture", "Sustainability"]
+    tags: ["Coconuts", "Processing", "Agriculture", "Sustainability"],
   },
   {
     id: 12,
     slug: "bird-watching-paradise",
     title: "Bird Watching Paradise",
-    excerpt: "A haven for rare and endemic species. Discover the incredible bird life of Cocos Islands, from breeding seabirds to the endemic Buff-banded Rail.",
+    excerpt:
+      "A haven for rare and endemic species. Discover the incredible bird life of Saffron Shores Collective, from breeding seabirds to the endemic Buff-banded Rail.",
     author: "Ornithologist Dr. Peters",
     date: "2024-09-01",
     category: "Tours",
     readTime: "7 min read",
-    featuredImage: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
+    featuredImage:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407578/pexels-izzy-poilly-2345996-4004522_tlik2c.jpg",
     content: `
       <p>The Cocos (Keeling) Islands punch well above their weight in avian diversity. These tiny specks of land in the Indian Ocean host breeding colonies of seabirds, serve as crucial stopover for migrants, and are home to the endemic Cocos Buff-banded Rail. For bird enthusiasts, the islands offer remarkable opportunities in a stunning tropical setting.</p>
 
@@ -580,23 +604,23 @@ export const blogPosts = [
 
       <p>For serious twitchers, hiring a guide for difficult-to-find species or access to restricted areas is worthwhile. Supporting local guides also helps fund conservation efforts.</p>
 
-      <p>The Cocos Islands offer intimate wildlife encounters impossible in more developed destinations. Whether you're a hardcore birder adding new species to your life list or a casual observer enjoying beautiful birds in paradise, these islands deliver memorable experiences.</p>
+      <p>The Saffron Shores Collective offer intimate wildlife encounters impossible in more developed destinations. Whether you're a hardcore birder adding new species to your life list or a casual observer enjoying beautiful birds in paradise, these islands deliver memorable experiences.</p>
     `,
-    tags: ["Bird Watching", "Wildlife", "Nature", "Photography"]
-  }
+    tags: ["Bird Watching", "Wildlife", "Nature", "Photography"],
+  },
 ];
 
 export function getBlogPostBySlug(slug) {
-  return blogPosts.find(post => post.slug === slug);
+  return blogPosts.find((post) => post.slug === slug);
 }
 
 export function getRelatedPosts(currentSlug, category, limit = 3) {
   return blogPosts
-    .filter(post => post.slug !== currentSlug && post.category === category)
+    .filter((post) => post.slug !== currentSlug && post.category === category)
     .slice(0, limit);
 }
 
 export function getAllCategories() {
-  const categories = [...new Set(blogPosts.map(post => post.category))];
+  const categories = [...new Set(blogPosts.map((post) => post.category))];
   return categories;
 }

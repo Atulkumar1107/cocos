@@ -10,7 +10,7 @@ export default function ShopPreview() {
       price: "$24.99",
       description: "Cold-pressed virgin coconut oil, perfect for cooking and skincare",
       image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407676/pexels-daniela-elena-tentis-118658-725998_zkvcba.jpg",
-      link: "/shop/coconut-oil",
+      link: "/fresh-produce",
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export default function ShopPreview() {
       price: "$39.99",
       description: "Fresh seasonal fruits including papaya, mango, and passion fruit",
       image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407713/pexels-dutumong-2422546_fyrw7f.jpg",
-      link: "/shop/fruit-box",
+      link: "/fresh-produce",
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ export default function ShopPreview() {
       price: "$18.99",
       description: "6-pack of fresh coconut water, naturally refreshing and hydrating",
       image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762407744/pexels-mithulvarshan-4802876_py4aza.jpg",
-      link: "/shop/coconut-water",
+      link: "/fresh-produce",
     },
   ];
 
@@ -87,7 +87,7 @@ export default function ShopPreview() {
                 </h3>
 
                 {/* Add to Cart Button */}
-                <button className="w-full bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors shadow-md">
+                <button className="w-full cursor-pointer bg-gray-900 text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors shadow-md">
                   Add to Cart
                 </button>
               </div>

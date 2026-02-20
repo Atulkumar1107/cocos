@@ -33,10 +33,10 @@ export function AdminSidebar({ ...props }) {
   const { user, logout } = useAuth();
 
   const navItems = [
-     {
+    {
       title: "Home",
       url: "/",
-      icon: House ,
+      icon: House,
     },
     {
       title: "Dashboard",
@@ -81,7 +81,9 @@ export function AdminSidebar({ ...props }) {
           </div>
           <div className="flex-1 group-data-[collapsible=icon]:hidden">
             <p className="text-sm font-semibold">Admin Panel</p>
-            <p className="text-xs text-muted-foreground">Cocos Islands</p>
+            <p className="text-xs text-muted-foreground">
+              Saffron Shores Collective
+            </p>
           </div>
         </div>
       </SidebarHeader>
@@ -114,7 +116,9 @@ export function AdminSidebar({ ...props }) {
             <p className="text-sm font-semibold">
               {user?.firstName} {user?.lastName}
             </p>
-            <p className="text-xs text-muted-foreground truncate">{user?.email}</p>
+            <p className="text-xs text-muted-foreground truncate">
+              {user?.email}
+            </p>
           </div>
           <button
             onClick={logout}

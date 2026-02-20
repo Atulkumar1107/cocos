@@ -4,53 +4,65 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function CoconutDiscoveryCenter() {
+const activities = [
+  {
+    id: 1,
+    title: "Sunrise Shoreline Walk",
+    description:
+      "Start your morning with a guided coastal walk as the sun rises over the horizon. Discover hidden coves, local marine life, and breathtaking ocean views.",
+    fullDescription:
+      "Experience the calm beauty of the coastline at sunrise with our expert local guides. Learn about coastal ecosystems, tidal patterns, and the natural history of the region while enjoying a peaceful and rejuvenating start to your day.",
+    operates: "Monday & Friday 6:00 - 7:30am",
+    price: "Adults - $25 | Children (6-12 years) - $12",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839256/pexels-cottonbro-5599688_kzcz0j.jpg",
+    bgColor: "bg-amber-700",
+    bookingNote: "Advance booking recommended.",
+  },
+  {
+    id: 2,
+    title: "Seaside Culinary Workshop",
+    description:
+      "Join our chefs for a hands-on coastal cooking experience featuring fresh, seasonal ingredients and vibrant seaside flavors.",
+    fullDescription:
+      "In this interactive workshop, you'll prepare signature dishes inspired by coastal cuisine. Learn plating techniques, flavor balancing, and sustainable sourcing practices — then enjoy your creations overlooking the ocean.",
+    operates: "Wednesdays 11:00am - 2:00pm",
+    price: "$75 per person",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839037/pexels-cottonbro-5599658_sgpj6z.jpg",
+    bgColor: "bg-[#f2edea]",
+    bookingNote: "Limited seats available. Booking essential.",
+  },
+  {
+    id: 3,
+    title: "Ocean Adventure Paddle",
+    description:
+      "Explore crystal-clear waters on a guided paddle experience suitable for beginners and adventure seekers alike.",
+    fullDescription:
+      "Glide across calm lagoons and scenic coastal stretches with experienced instructors. This guided paddle session includes safety briefing, equipment, and insights into the surrounding marine environment.",
+    operates: "Tuesdays & Saturdays 9:00 - 11:00am",
+    price: "$40 per person",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839086/pexels-anastasia-shuraeva-5566935_vjfkky.jpg",
+    bgColor: "bg-amber-700",
+    bookingNote: "Bookings required. Weather dependent.",
+  },
+  {
+    id: 4,
+    title: "Coastal Market & Artisan Corner",
+    description:
+      "Browse a curated selection of locally crafted goods, gourmet products, and coastal-inspired keepsakes.",
+    fullDescription:
+      "Our artisan corner showcases handcrafted pieces, small-batch gourmet items, and lifestyle products inspired by seaside living. Meet the makers, learn their stories, and take home something truly special.",
+    operates: "Friday & Sunday 10:00am - 3:00pm",
+    price: "Free entry",
+    image:
+      "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839192/pexels-any-lane-5728308_lbmvho.jpg",
+    bgColor: "bg-[#f2edea]",
+    bookingNote: "Open to all. No reservation required.",
+  },
+];
 
-  const activities = [
-    {
-      id: 1,
-      title: "Coconut Tours",
-      description: "Learn about the life of a coconut through a hands-on demonstration with local coconut farmers. Explore the coconut palm jungle and sample fresh coconut products, including yummy coconut ice cream!",
-      fullDescription: "Discover the fascinating journey of the coconut from tree to table. Our expert guides will walk you through the traditional harvesting methods, show you the various uses of every part of the coconut palm, and let you taste the freshest coconut products straight from the source.",
-      operates: "Tuesday & Wednesday 9 - 10am",
-      price: "Adults - $20 | Children (5-12 years) - $10",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839256/pexels-cottonbro-5599688_kzcz0j.jpg",
-      bgColor: "bg-green-700",
-      bookingNote: "Bookings essential.",
-    },
-    {
-      id: 2,
-      title: "Coconut Jewellery Workshops",
-      description: "Join one of our Cocos Island artisans to craft a unique piece of jewellery from a coconut shell. Includes jewellery making materials + equipment, light snacks + chilled drinks.",
-      fullDescription: "Create your own wearable souvenir in this hands-on workshop. Learn traditional techniques passed down through generations as you transform natural coconut shells into beautiful, unique jewellery pieces to take home.",
-      operates: "Wednesdays 10 - 2pm",
-      price: "$65",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839037/pexels-cottonbro-5599658_sgpj6z.jpg",
-      bgColor: "bg-[#f2edea]",
-      bookingNote: "Bookings essential.",
-    },
-    {
-      id: 3,
-      title: "Coconut Bowl Workshops",
-      description: "Craft your own coconut bowl with one of our local artisans. Includes Coconut making materials + equipment.",
-      fullDescription: "Shape and polish your own functional coconut bowl in this traditional craft workshop. Our skilled artisans will guide you through each step of the process, from selecting the perfect shell to finishing your unique creation.",
-      operates: "Tuesdays 10 - 12pm",
-      price: "$30",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839086/pexels-anastasia-shuraeva-5566935_vjfkky.jpg",
-      bgColor: "bg-green-700",
-      bookingNote: "Bookings essential.",
-    },
-    {
-      id: 4,
-      title: "Gift Shop",
-      description: "Take a little bit of the Cocos Islands home with you with our beautiful collection of coconut-based gifts made right here on the island. Try our range of coconut body butters, lip balms and salt scrubs with tropical perfumes including paw paw, watermelon and frangipani.",
-      fullDescription: "Our collection of cooking oils are made using traditional methods passed down through generations, including coconut oil, lemongrass and chilli. Browse our collection of antique, hand-etched coconut jewellery.",
-      operates: "Tuesday & Wednesday 11am - 12pm",
-      price: "Free entry",
-      image: "https://res.cloudinary.com/dbjcqykzz/image/upload/v1762839192/pexels-any-lane-5728308_lbmvho.jpg",
-      bgColor: "bg-[#f2edea]",
-      bookingNote: "No booking required. Drop by during opening hours.",
-    },
-  ];
 
   const scrollToForm = () => {
     const formSection = document.getElementById("booking-form");
@@ -70,7 +82,9 @@ export default function CoconutDiscoveryCenter() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Booking Inquiry:", formData);
-    alert("Thank you for your inquiry! We'll contact you shortly with availability and pricing.");
+    alert(
+      "Thank you for your inquiry! We'll contact you shortly with availability and pricing.",
+    );
   };
 
   return (
@@ -95,20 +109,25 @@ export default function CoconutDiscoveryCenter() {
             <div className="space-y-6">
               <div className="inline-block bg-green-100 px-6 py-2 rounded-full">
                 <p className="text-green-800 font-semibold text-sm uppercase tracking-wide">
-                  Cocos Islands
+                  Saffron Shores Collective
                 </p>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
                 Wild Coconut Discovery Centre
               </h1>
               <p className="text-xl text-gray-700 leading-relaxed">
-                Uncover the fascinating history of coconuts on the Cocos (Keeling) Islands at the Wild Coconut Discovery Centre.
+                Uncover the fascinating history of coconuts on the Saffron Shores Collective at the Wild Coconut Discovery Centre.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Located at the old abandoned farm site on Mahoon Road opposite the Big Barge Art Gallery, Wild Coconut Discovery Centre offers the chance to learn all about the process of coconut production. View the steps from harvest to pressing, through hands on demonstrations and tastings along the way.
+                Located at the old abandoned farm site on Mahoon Road opposite
+                the Big Barge Art Gallery, Wild Coconut Discovery Centre offers
+                the chance to learn all about the process of coconut production.
+                View the steps from harvest to pressing, through hands on
+                demonstrations and tastings along the way.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Learn to make your own coconut jewellery with a workshop. Or pick up a unique Cocos Island gift or souvenir at our gift shop.
+                Learn to make your own coconut jewellery with a workshop. Or
+                pick up a unique Saffron Shores Collective gift or souvenir at our gift shop.
               </p>
             </div>
           </div>
@@ -137,14 +156,16 @@ export default function CoconutDiscoveryCenter() {
             }
           >
             <div className="mx-auto max-w-7xl">
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? "lg:flex-row-reverse" : ""}`}>
-               <div
-        className="absolute top-0 left-0 right-0 h-24 z-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 20%, rgba(242, 237, 234, 0) 100%)",
-        }}
-      ></div>
+              <div
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? "lg:flex-row-reverse" : ""}`}
+              >
+                <div
+                  className="absolute top-0 left-0 right-0 h-24 z-0"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom, rgba(242, 237, 234, 1) 0%, rgba(242, 237, 234, 0.5) 20%, rgba(242, 237, 234, 0) 100%)",
+                  }}
+                ></div>
                 {/* Image Side */}
                 <div className={`${!isEven ? "lg:order-2" : ""}`}>
                   <div className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
@@ -154,7 +175,6 @@ export default function CoconutDiscoveryCenter() {
                       fill
                       className="object-cover"
                     />
-                   
                   </div>
                 </div>
 
@@ -163,7 +183,7 @@ export default function CoconutDiscoveryCenter() {
                   <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
                     {activity.title}
                   </h2>
-                  
+
                   <p className="text-lg leading-relaxed text-gray-700">
                     {activity.description}
                   </p>
@@ -176,10 +196,12 @@ export default function CoconutDiscoveryCenter() {
 
                   <div className="space-y-3 pt-4 text-gray-900">
                     <p className="text-lg">
-                      <span className="font-semibold">Operates:</span> {activity.operates}
+                      <span className="font-semibold">Operates:</span>{" "}
+                      {activity.operates}
                     </p>
                     <p className="text-lg">
-                      <span className="font-semibold">Price:</span> {activity.price}
+                      <span className="font-semibold">Price:</span>{" "}
+                      {activity.price}
                     </p>
                     <p className="text-sm italic text-gray-600">
                       {activity.bookingNote}

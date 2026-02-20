@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="relative z-10 mx-auto max-w-7xl">
         {/* Logo/Brand Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-2">Cocos Artisans Collective</h2>
+          <h2 className="text-3xl font-bold mb-2">Saffron Sands Collective</h2>
           <p className="text-gray-400">Experience Authentic Island Life</p>
         </div>
 
@@ -97,7 +97,7 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Email</p>
                   <a href="mailto:info@cocosartisans.com" className="text-gray-300 hover:text-orange-500 transition-colors">
-                    info@cocosartisans.com
+                    info@saffronsandscollective.com
                   </a>
                 </div>
               </li>
@@ -120,7 +120,7 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Phone</p>
                   <a href="tel:+61891234567" className="text-gray-300 hover:text-orange-500 transition-colors">
-                    +61 8 9123 4567
+                    +91 123456789
                   </a>
                 </div>
               </li>
@@ -149,8 +149,8 @@ export default function Footer() {
                 <div>
                   <p className="text-gray-400 text-sm">Address</p>
                   <p className="text-gray-300">
-                    Home Island, Cocos (Keeling) Islands<br />
-                    Western Australia 6799
+                    Saffron Sands Islands<br />
+                    Australia 6789
                   </p>
                 </div>
               </li>
@@ -252,7 +252,7 @@ export default function Footer() {
         {/* Bottom Bar - Copyright */}
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2025 Cocos Artisans Collective. All rights reserved.
+            © 2025 Saffron Sands Collective. All rights reserved.
           </p>
         </div>
       </div>

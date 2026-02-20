@@ -29,8 +29,9 @@ export default function QuoteSection() {
         {/* Quote Text */}
         <blockquote className="mb-8">
           <p className="text-2xl sm:text-3xl lg:text-4xl font-light text-zinc-900 leading-relaxed italic">
-            Our vision is simple yet profound: to create meaningful connections between visitors and our island community, while preserving the authentic culture and traditions that make Cocos Islands unique. Every project we undertake is rooted in sustainability and the belief that tourism can be a force for positive change.
-          </p>
+  Every journey we create is guided by intention — blending authentic flavors, coastal adventure, and heartfelt hospitality into moments that linger long after the tide goes out.
+</p>
+
         </blockquote>
 
         {/* Closing Quote Mark */}
@@ -50,10 +51,10 @@ export default function QuoteSection() {
         {/* Author Info */}
         <div>
           <p className="text-xl font-bold text-zinc-900 mb-1">
-            Tony Lacy
+            Denny Tony
           </p>
           <p className="text-base text-zinc-600">
-            Founder, Cocos Artisans Collective
+            Founder, Saffron Sands Collective
           </p>
         </div>
 
